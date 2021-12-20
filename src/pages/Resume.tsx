@@ -1,11 +1,10 @@
 import React from "react";
+import TemplateDefault from "../templates/Default";
 const Resume = () => {
   return (
-    <div className="Resume">
-      <main>
-        <h1>レジュメ </h1>
-      </main>
-    </div>
+    <TemplateDefault title="レジュメ">
+      <h1>レジュメ </h1>
+    </TemplateDefault>
   );
 };
 

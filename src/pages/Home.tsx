@@ -1,11 +1,10 @@
 import React from "react";
+import TemplateDefault from "../templates/Default";
 const Home = () => {
   return (
-    <div className="Home">
-      <main>
-        <h1>ホーム </h1>
-      </main>
-    </div>
+    <TemplateDefault title="ホーム">
+      <h1>ホーム </h1>
+    </TemplateDefault>
   );
 };
 
