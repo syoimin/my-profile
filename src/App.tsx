@@ -1,15 +1,17 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Skil from "./pages/Skil";
+import Skill from "./pages/Skill";
 import Resume from "./pages/Resume";
 import Activitiy from "./pages/Activity";
+import About from "./pages/About";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/skil" element={<Skil />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/skill" element={<Skill />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/activity" element={<Activitiy />} />
     </Routes>

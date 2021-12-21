@@ -1,6 +1,6 @@
 import React from "react";
 import TemplateDefault from "../templates/Default";
-const Activity = () => {
+const About = () => {
   return (
     <TemplateDefault title="アクティビティ">
       <h1> アクティビティ</h1>
@@ -8,4 +8,4 @@ const Activity = () => {
   );
 };
 
-export default Activity;
+export default About;
