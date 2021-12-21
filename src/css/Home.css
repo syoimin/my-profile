@@ -1,0 +1,17 @@
+p {
+  white-space: pre-line;
+}
+
+.vertical-timeline-element-title {
+  color: #000;
+}
+
+.vertical-timeline-element-subtitle {
+  color: rgba(58, 60, 72, 0.45);
+}
+
+.vertical-timeline-element-content p.vertical-timeline-element-text {
+  line-height: 1.5;
+  font-size: 0.89em;
+  color: rgba(58, 60, 72, 0.45);
+}

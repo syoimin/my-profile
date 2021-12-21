@@ -1,5 +1,8 @@
+import Box from "@mui/material/Box";
 import React from "react";
 import Header from "../components/Header";
+import theme from "../styles/theme";
+import { ThemeProvider } from "@mui/material/styles";
 
 interface DefaultTemplateProps {
   title: string;
@@ -8,10 +11,12 @@ interface DefaultTemplateProps {
 
 const Default: React.FC<DefaultTemplateProps> = ({ children, title }) => {
   return (
-    <div className="template-default">
-      <Header />
-      <main>{children}</main>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Box sx={{ bgcolor: "#F6F6F4" }}>
+        <Header />
+        <main>{children}</main>
+      </Box>
+    </ThemeProvider>
   );
 };
 
