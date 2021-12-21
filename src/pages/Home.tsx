@@ -7,6 +7,8 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Timeline from "../components/Timeline";
 import "../css/Home.css";
+import HomeCard from "../components/HomeCard";
+import Container from "@mui/material/Container";
 
 interface homeProps {
   data: {
@@ -78,7 +80,28 @@ const Home = (props: homeProps) => {
           </Grid>
         </Grid>
       </Paper>
-      <Timeline />
+
+      <Box sx={{ bgcolor: "#EDF2F6" }}>
+        <Container maxWidth="lg">
+          <Grid container justifyContent="center">
+            <Typography variant="h3" mb={10} pt={10}>
+              Pick up
+            </Typography>
+          </Grid>
+
+          <HomeCard />
+        </Container>
+      </Box>
+      <Box sx={{ bgcolor: "#EDF2F6" }}>
+        <Container maxWidth="lg">
+          <Grid container justifyContent="center">
+            <Typography variant="h3" mb={10} pt={10}>
+              History{" "}
+            </Typography>
+            <Timeline />
+          </Grid>
+        </Container>
+      </Box>
     </TemplateDefault>
   );
 };
