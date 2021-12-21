@@ -170,7 +170,7 @@ const historyData = [
       background: oddColor.background,
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
-    date: "近い将来、10、20年後の未来",
+    date: "近い将来 & 10、20年後の未来",
     iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
     icon: <BusinessIcon />,
     title: "新たな道とさらなる高みへ",
