@@ -152,10 +152,10 @@ const historyData = [
       background: oddColor.background,
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
-    date: "2021 年 10月 ~ 現在",
+    date: "2021 年現在",
     iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
     icon: <BusinessIcon />,
-    title: "クラウドネイティブな Web エンジニアへの道へ",
+    title: "クラウドネイティブな Web エンジニアへ成長",
     subTitle: "",
     contents: `開発エンジニアとして従事したいことを上司に報告。
         ReactNative を利用した予約サービスのモバイルアプリ、
