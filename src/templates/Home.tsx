@@ -3,23 +3,20 @@ import React from "react";
 import Header from "../components/Header";
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material/styles";
-import Container from "@mui/material/Container";
 
-interface DefaultTemplateProps {
+interface HomeTemplateProps {
   children: React.ReactNode;
 }
 
-const Default: React.FC<DefaultTemplateProps> = ({ children }) => {
+const Home: React.FC<HomeTemplateProps> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ bgcolor: "#F6F6F4" }}>
         <Header />
-        <Container maxWidth="lg">
-          <main>{children}</main>
-        </Container>
+        <main>{children}</main>
       </Box>
     </ThemeProvider>
   );
 };
 
-export default Default;
+export default Home;

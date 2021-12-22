@@ -1,5 +1,5 @@
 import React from "react";
-import TemplateDefault from "../templates/Default";
+import TemplateHome from "../templates/Home";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -24,7 +24,7 @@ interface homeProps {
 const Home = (props: homeProps) => {
   const { data } = props;
   return (
-    <TemplateDefault title="ホーム">
+    <TemplateHome>
       <Paper
         sx={{
           position: "relative",
@@ -115,7 +115,7 @@ const Home = (props: homeProps) => {
           </Grid>
         </Container>
       </Box>
-    </TemplateDefault>
+    </TemplateHome>
   );
 };
 
