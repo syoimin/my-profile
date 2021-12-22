@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Skill from "./pages/Skill";
+import Skill from "./pages/Skills";
 import Resume from "./pages/Resume";
-import Activitiy from "./pages/Activity";
 import About from "./pages/About";
 
 const homeProps = {
@@ -19,9 +18,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home data={homeProps} />} />
       <Route path="/about" element={<About />} />
-      <Route path="/skill" element={<Skill />} />
+      <Route path="/skills" element={<Skill />} />
       <Route path="/resume" element={<Resume />} />
-      <Route path="/activity" element={<Activitiy />} />
     </Routes>
   );
 }

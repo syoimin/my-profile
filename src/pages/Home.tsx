@@ -4,11 +4,12 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import Timeline from "../components/Timeline";
 import "../css/Home.css";
 import HomeCard from "../components/HomeCard";
 import Container from "@mui/material/Container";
+import Avatar from "../components/Avatar";
+import IconLabel from "../components/Icons/IconLabel";
 
 interface homeProps {
   data: {
@@ -73,10 +74,22 @@ const Home = (props: homeProps) => {
               <Typography variant="h5" color="inherit" paragraph>
                 {data.description}
               </Typography>
-              <Link variant="subtitle1" href="#">
-                {data.linkText}
-              </Link>
             </Box>
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+          spacing={8}
+          pb={10}
+        >
+          <Grid item xs={12}>
+            <Avatar />
+          </Grid>
+          <Grid item xs={12}>
+            <IconLabel />
           </Grid>
         </Grid>
       </Paper>

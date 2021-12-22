@@ -1,6 +1,6 @@
 import React from "react";
 import TemplateDefault from "../templates/Default";
-const Skill = () => {
+const Skills = () => {
   return (
     <TemplateDefault title="スキル">
       <h1>スキル </h1>
@@ -8,4 +8,4 @@ const Skill = () => {
   );
 };
 
-export default Skill;
+export default Skills;
