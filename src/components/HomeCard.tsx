@@ -45,7 +45,7 @@ const HomeCard = () => {
                 component="img"
                 height="300"
                 image={data.image}
-                alt="Paella dish"
+                alt={data.description}
               />
             </Card>
           </Button>
