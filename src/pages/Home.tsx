@@ -109,7 +109,7 @@ const Home = (props: homeProps) => {
         <Container maxWidth="lg">
           <Grid container justifyContent="center">
             <Typography variant="h3" mb={10} pt={10}>
-              History{" "}
+              History
             </Typography>
             <Timeline />
           </Grid>

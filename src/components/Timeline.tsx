@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "./Icons/SchoolIcon";
 import HomeIcon from "./Icons/HomeIcon";
 import BusinessIcon from "./Icons/BusinessIcon";
+import AirplaneIcon from "./Icons/AirplaneIcon";
 
 // interface data {
 //   className: string;
@@ -39,8 +40,8 @@ const historyData = [
       background: evenColor.background,
     },
     contentArrowStyle: { borderRight: `7px solid  ${evenColor.background}` },
-    date: "",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    date: "学生時代",
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <SchoolIcon />,
     title: "競技プログラミングの出場",
     subTitle: "プログラミングサークル",
@@ -55,7 +56,7 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${evenColor.background}` },
     date: "2016 年卒業",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <SchoolIcon />,
     title: "高知工科大学 情報学群 卒業",
     subTitle: "情報通信専攻 コンピュータサイエンス副専攻",
@@ -71,7 +72,7 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
     date: "2016年",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <BusinessIcon />,
     title: "初めてのシステムエンジニア",
     subTitle: "",
@@ -89,7 +90,7 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
     date: "2017年",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <HomeIcon />,
     title: "SPAJAM 2017 予選出場 (優秀賞受賞)",
     subTitle: "",
@@ -105,13 +106,15 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
     date: "2018年",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <BusinessIcon />,
     title: "転職後のインフラエンジニア",
     subTitle: "",
     contents: `転職後、インフラエンジニアとして、データセンターからAWSへのサーバマイグレーションの案件を行う。
         AWSソリューションアーキテクトを取得。
-        クラウドネイティブなネットワークの設計、Ansibleを用いたサーバの構築、CloudFormationを用いた IaC の導入を行う。`,
+        クラウドネイティブなネットワークの設計・構築、
+        Ansibleを用いたサーバの構築、CodePipeline を使った CI・CD環境、コンテナ 環境の構築、
+        CloudFormationを用いた IaC の導入を行う。`,
   },
   {
     className: "vertical-timeline-element--work",
@@ -120,7 +123,7 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
     date: "2019年",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <HomeIcon />,
     title: "SPAJAM 2019予選出場 (優秀賞受賞)",
     subTitle: "",
@@ -135,7 +138,7 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
     date: "2020 年 ",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <HomeIcon />,
     title: "技術書典の執筆活動",
     subTitle: "オムライス本だよ",
@@ -153,13 +156,14 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
     date: "2021 年現在",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
+    iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <BusinessIcon />,
     title: "クラウドネイティブな Web エンジニアへ成長",
     subTitle: "",
-    contents: `開発エンジニアとして従事したいことを上司に報告。
+    contents: `2018年に開発エンジニアとして従事したいことを上司に報告。
         ReactNative を利用した予約サービスのモバイルアプリ、
-        Laravel を使った開発などを通して、徐々にフルスタックエンジニアとしてのキャリアを進んでいく。
+        Laravel や Go、Nodejs などを使った開発などを通して、
+        徐々に Web エンジニア としてのキャリアを積む。
         今ではAWS を利用したクラウドネイティブなアーキテクトの設計からバックエンドの開発
         環境構築、フロントエンドの開発など、開発フローのほとんどの領域を一人で行うまでに成長`,
   },
@@ -171,8 +175,8 @@ const historyData = [
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
     date: "近い将来 & 10、20年後の未来",
-    iconStyle: { background: "rgb(40, 150, 100)", color: "#fff" },
-    icon: <BusinessIcon />,
+    iconStyle: { background: "#b33e5c", color: "#fff" },
+    icon: <AirplaneIcon />,
     title: "新たな道とさらなる高みへ",
     subTitle: "大変革時代を生き残るためにするべきこと",
     contents: `将来の目標：

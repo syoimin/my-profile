@@ -2,6 +2,7 @@ import React from "react";
 // import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 import MuiHomeIcon from "@mui/icons-material/Home";
 
+// SVG パターン
 // function HomeIcon(props: SvgIconProps) {
 //   return (
 //     <SvgIcon {...props}>

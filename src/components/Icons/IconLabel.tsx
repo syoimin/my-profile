@@ -4,15 +4,29 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
 import Stack from "@mui/material/Stack";
 
+const icons = [
+  {
+    icon: <DeleteIcon />,
+    title: "Qiita",
+  },
+  {
+    icon: <SendIcon />,
+    title: "Github",
+  },
+];
 const IconLabel = () => {
   return (
     <Stack direction="row" spacing={2}>
-      <Button variant="outlined" startIcon={<DeleteIcon />}>
-        Delete
-      </Button>
-      <Button variant="contained" endIcon={<SendIcon />}>
-        Send
-      </Button>
+      {icons.map((data, index) => (
+        <Button
+          variant="contained"
+          size="large"
+          startIcon={data.icon}
+          key={index}
+        >
+          {data.title}
+        </Button>
+      ))}
     </Stack>
   );
 };
