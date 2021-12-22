@@ -1,7 +1,6 @@
 import Accordion from "../components/Accordion";
 import React from "react";
 import TemplateDefault from "../templates/Default";
-import Container from "@mui/material/Container";
 const Resume = () => {
   return (
     <TemplateDefault>

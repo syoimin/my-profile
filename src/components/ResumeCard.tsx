@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import ReactIcon from "./Icons/ReactIcon";
 
 const bull = (
   <Box
@@ -24,11 +25,18 @@ const ResumeCard = () => {
     >
       {Array.from(Array(6)).map((_, index) => (
         <Grid item xs={2} sm={4} md={4} key={index}>
-          <Card sx={{ minWidth: 275 }}>
+          <Card
+            sx={{
+              minWidth: 275,
+              bgcolor: "primary.main",
+              color: "primary.contrastText",
+            }}
+          >
             <CardContent>
+              <ReactIcon />
               <Typography
                 sx={{ fontSize: 14 }}
-                color="text.secondary"
+                color="text.primary"
                 gutterBottom
               >
                 Word of the Day
