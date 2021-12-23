@@ -3,7 +3,7 @@ import React from "react";
 import TemplateDefault from "../templates/Default";
 const Resume = () => {
   return (
-    <TemplateDefault>
+    <TemplateDefault className="resume">
       <h1>経歴・履歴（最新順） </h1>
       <Accordion />
     </TemplateDefault>

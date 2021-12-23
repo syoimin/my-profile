@@ -7,15 +7,17 @@ import Container from "@mui/material/Container";
 
 interface DefaultTemplateProps {
   children: React.ReactNode;
+  className: string;
 }
 
-const Default: React.FC<DefaultTemplateProps> = ({ children }) => {
+const Default = (Props: DefaultTemplateProps) => {
+  const { children, className } = Props;
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ bgcolor: "#F6F6F4" }}>
         <Header />
         <Container maxWidth="lg">
-          <main>{children}</main>
+          <main className={className}>{children}</main>
         </Container>
       </Box>
     </ThemeProvider>

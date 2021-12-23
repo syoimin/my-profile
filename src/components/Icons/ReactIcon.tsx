@@ -7,6 +7,7 @@ interface svgProps {
       title?: string | undefined;
     }
   >;
+  viewBox: string;
 }
 
 const ReactIcon = (props: svgProps) => {
@@ -15,7 +16,7 @@ const ReactIcon = (props: svgProps) => {
     <SvgIcon
       component={props.icon}
       sx={{ fontSize: 80 }}
-      viewBox="0 0 264 264"
+      viewBox={props.viewBox}
     />
   );
 };

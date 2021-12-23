@@ -10,7 +10,7 @@ const pickUpData = [
     url: "https://devmaga.booth.pm/items/1289841",
     image:
       "https://s2.booth.pm/8ef349d0-66e2-4942-a03b-6c76240895a2/i/1289841/2afaa08b-ef89-4728-a322-3ce5d5273c43_base_resized.jpg",
-    description: "技術書典: Developers Magazine Vol1",
+    description: "技術書典: Developers Magazine Vol.1",
   },
   {
     url: "https://devmaga.booth.pm/items/1549276",
