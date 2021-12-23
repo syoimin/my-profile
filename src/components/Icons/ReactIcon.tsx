@@ -1,15 +1,23 @@
 import React from "react";
 import SvgIcon from "@mui/material/SvgIcon";
-import { ReactComponent as SvgReactIcon } from "../../icons/react.svg";
 
-function ReactIcon() {
+interface svgProps {
+  icon: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
+}
+
+const ReactIcon = (props: svgProps) => {
+  console.log(props.icon);
   return (
     <SvgIcon
-      component={SvgReactIcon}
+      component={props.icon}
       sx={{ fontSize: 80 }}
-      viewBox="0 0 256 228"
+      viewBox="0 0 264 264"
     />
   );
-}
+};
 
 export default ReactIcon;
