@@ -81,7 +81,20 @@ const skilsData = [
   {
     icon: SvgGoIcon,
     skil: "Go",
-    others: ["gin"],
+    others: ["gin", "gorm"],
+    rating: 4,
+    viewBox: "0 0 256 348",
+    projects: [
+      {
+        title: "○○案件の管理画面作成プロジェクト",
+        link: "https://google.com",
+      },
+    ],
+  },
+  {
+    icon: SvgGoIcon,
+    skil: "Java",
+    others: ["Apach Click, Java6"],
     rating: 4,
     viewBox: "0 0 256 348",
     projects: [
@@ -131,13 +144,13 @@ const SkilsCard = () => {
                       {data.skil}
                     </Typography>
                   </Grid>
-                  <Grid item xs={2}>
+                  <Grid item xs={2} pb={2}>
                     <Rating name="read-only" value={data.rating} readOnly />
                   </Grid>
                 </Grid>
 
                 <Stack direction="row" spacing={1}>
-                  <Grid container spacing={1}>
+                  <Grid container justifyContent="center" spacing={1}>
                     {data.others.map((other, index) => (
                       <Grid item key={index}>
                         <Chip label={other} color="primary" />
