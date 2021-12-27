@@ -11,108 +11,41 @@ import Rating from "@mui/material/Rating";
 // import SvgReactIcon from "../icons/react.svg";
 // import SvgVueIcon from "../icons/vue.svg";
 // import SvgLaravelIcon from "../icons/laravel.svg";
-import { ReactComponent as SvgReactIcon } from "../icons/react.svg";
-import { ReactComponent as SvgVueIcon } from "../icons/vue.svg";
-import { ReactComponent as SvgLaravelIcon } from "../icons/laravel.svg";
-import { ReactComponent as SvgAwsAmplifyIcon } from "../icons/aws-amplify.svg";
-import { ReactComponent as SvgGoIcon } from "../icons/gopher.svg";
+
 import "../css/Skils.css";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 
-const skilsData = [
-  {
-    icon: SvgReactIcon,
-    skil: "React",
-    others: ["React Native", "Expo"],
-    rating: 2,
-    viewBox: "0 0 256 228",
-    projects: [
-      {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
-      },
-      {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
-      },
-    ],
-  },
-  {
-    icon: SvgVueIcon,
-    skil: "Vue",
-    others: ["Vue3", "Composition API", "Vue2", "Vuex", "Vue Router", "NuxtJS"],
-    rating: 3,
-    viewBox: "0 0 256 221",
-    projects: [
-      {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
-      },
-    ],
-  },
-  {
-    icon: SvgLaravelIcon,
-    skil: "Laravel",
-    others: ["Laravel 5,7,8"],
-    rating: 4,
-    viewBox: "0 0 256 264",
-    projects: [
-      {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
-      },
-    ],
-  },
-  {
-    icon: SvgAwsAmplifyIcon,
-    skil: "AWS Amplify",
-    others: ["Amplify SDK", "Authenticator", "IoT Core"],
-    rating: 4,
-    viewBox: "0 0 256 191",
-    projects: [
-      {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
-      },
-    ],
-  },
-  {
-    icon: SvgGoIcon,
-    skil: "Go",
-    others: ["gin", "gorm"],
-    rating: 4,
-    viewBox: "0 0 256 348",
-    projects: [
-      {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
-      },
-    ],
-  },
-  {
-    icon: SvgGoIcon,
-    skil: "Java",
-    others: ["Apach Click, Java6"],
-    rating: 4,
-    viewBox: "0 0 256 348",
-    projects: [
-      {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
-      },
-    ],
-  },
-];
-const SkilsCard = () => {
+interface skilsObject {
+  icon: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
+  skil: string;
+  others: Array<string>;
+  rating: number;
+  viewBox: string;
+  projects: Array<{
+    title: string;
+    link: string;
+  }>;
+}
+
+interface skillsProps {
+  skillsData: skilsObject[];
+}
+
+const SkillsCard = (props: skillsProps) => {
+  const { skillsData } = props;
   return (
     <Grid
       container
       spacing={{ xs: 2, md: 3 }}
       columns={{ xs: 4, sm: 8, md: 12 }}
     >
-      {skilsData.map((data, index) => (
+      {skillsData.map((data, index) => (
         <Grid item xs={2} sm={4} md={4} key={index}>
           <Card
             className="card"
@@ -187,4 +120,4 @@ const SkilsCard = () => {
   );
 };
 
-export default SkilsCard;
+export default SkillsCard;
