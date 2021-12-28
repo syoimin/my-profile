@@ -7,10 +7,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import ReactIcon from "./Icons/SvgIcon";
 import Rating from "@mui/material/Rating";
-// アス比が崩れるが大きさは揃う
-// import SvgReactIcon from "../icons/react.svg";
-// import SvgVueIcon from "../icons/vue.svg";
-// import SvgLaravelIcon from "../icons/laravel.svg";
 
 import "../css/Skils.css";
 import Link from "@mui/material/Link";

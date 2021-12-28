@@ -27,12 +27,14 @@ const SkillsList = (props: skilsProps) => {
         >
           <Typography
             variant="body2"
+            color="primary.fontColorDark"
             sx={{
               fontWeight: "100",
             }}
           >{`${data.title}： `}</Typography>
           <Typography
-            variant="body2"
+            variant="body1"
+            color="primary.fontColorDark"
             sx={{
               fontWeight: "500",
             }}
