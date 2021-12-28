@@ -1,5 +1,5 @@
 import React from "react";
-import SvgIcon from "@mui/material/SvgIcon";
+import MuiSvgIcon from "@mui/material/SvgIcon";
 
 interface svgProps {
   icon: React.FunctionComponent<
@@ -10,10 +10,10 @@ interface svgProps {
   viewBox: string;
 }
 
-const ReactIcon = (props: svgProps) => {
+const SvgIcon = (props: svgProps) => {
   console.log(props.icon);
   return (
-    <SvgIcon
+    <MuiSvgIcon
       component={props.icon}
       sx={{ fontSize: 80 }}
       viewBox={props.viewBox}
@@ -21,4 +21,4 @@ const ReactIcon = (props: svgProps) => {
   );
 };
 
-export default ReactIcon;
+export default SvgIcon;

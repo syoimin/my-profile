@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import ReactIcon from "./Icons/ReactIcon";
+import ReactIcon from "./Icons/SvgIcon";
 import Rating from "@mui/material/Rating";
 // アス比が崩れるが大きさは揃う
 // import SvgReactIcon from "../icons/react.svg";

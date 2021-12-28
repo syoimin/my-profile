@@ -7,6 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const resumeData = [
   {
+    skills: [],
     title: "マルチテナントの会員登録ページの認証システムの設計・開発",
     contents: `ノーコードで会員登録ページを作成できるサービスのマルチテナント認証方式の設計・開発
     認証サービスとして Cognito を採用し、マルチテナントに対応するためマルチユーザプール型を採用。`,
