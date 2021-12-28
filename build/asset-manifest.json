@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.d5e811c2.css",
-    "main.js": "/my-profile/static/js/main.e8b0941a.js",
+    "main.css": "/my-profile/static/css/main.06c5bb4c.css",
+    "main.js": "/my-profile/static/js/main.5273dfff.js",
     "static/js/787.3ee23931.chunk.js": "/my-profile/static/js/787.3ee23931.chunk.js",
+    "static/media/gopher.svg": "/my-profile/static/media/gopher.a133b78b252b8cfb35adc983d3dbae60.svg",
+    "static/media/react.svg": "/my-profile/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/ansible.svg": "/my-profile/static/media/ansible.29daedfddb3a74aee8b0b4dc822bdd2c.svg",
+    "static/media/laravel.svg": "/my-profile/static/media/laravel.c3b0c294b4e89297f2292f3378bc202d.svg",
+    "static/media/java.svg": "/my-profile/static/media/java.83165dfb2f5a7657ce4c73e0ba3cef32.svg",
+    "static/media/aws-cloudformation.svg": "/my-profile/static/media/aws-cloudformation.4c9729aa02f181abac5efaca993ce97e.svg",
+    "static/media/aws-amplify.svg": "/my-profile/static/media/aws-amplify.39678aa05a4ce5e61a975f6ceaeefa38.svg",
+    "static/media/serverless.svg": "/my-profile/static/media/serverless.7ed1e4ae4da4576c4fec1077c2cbc1bf.svg",
     "index.html": "/my-profile/index.html",
-    "main.d5e811c2.css.map": "/my-profile/static/css/main.d5e811c2.css.map",
-    "main.e8b0941a.js.map": "/my-profile/static/js/main.e8b0941a.js.map",
+    "static/media/vue.svg": "/my-profile/static/media/vue.c286d2da48ffbf281f407b0c4c94271f.svg",
+    "main.06c5bb4c.css.map": "/my-profile/static/css/main.06c5bb4c.css.map",
+    "main.5273dfff.js.map": "/my-profile/static/js/main.5273dfff.js.map",
     "787.3ee23931.chunk.js.map": "/my-profile/static/js/787.3ee23931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5e811c2.css",
-    "static/js/main.e8b0941a.js"
+    "static/css/main.06c5bb4c.css",
+    "static/js/main.5273dfff.js"
   ]
 }
