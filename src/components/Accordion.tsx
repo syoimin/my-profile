@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import MuiAccordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -8,6 +8,8 @@ import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 import Chip from "@mui/material/Chip";
 import AssignIcon from "./Icons/AssignIcon";
+import Link from "@mui/material/Link";
+import { useParams, useLocation } from "react-router-dom";
 
 const resumeData = [
   {
@@ -96,36 +98,46 @@ const resumeData = [
 ];
 
 const Accordion = () => {
+  const location = useLocation(); // アンカーから直リンクされた時にアコーディオンを開くために利用
+
   return (
     <>
       {resumeData.map((data, index) => (
-        <MuiAccordion key={index}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            sx={{ bgcolor: "primary.bgLight" }}
-          >
-            <Grid container direction="row" spacing={1}>
-              <Grid container spacing={1} p={2}>
-                <Stack direction="row" spacing={1}>
-                  <Grid container justifyContent="center" spacing={1}>
-                    {data.skills.map((skill, index) => (
-                      <Grid item key={index}>
-                        <Chip label={skill} color="primary" size="small" />
-                      </Grid>
-                    ))}
-                  </Grid>
-                </Stack>
-              </Grid>
+        <MuiAccordion
+          TransitionProps={{ unmountOnExit: false }}
+          key={index}
+          expanded={
+            decodeURI(location.hash) === `#${data.title}` ? true : false
+          }
+        >
+          <Link underline="none" href={`#${data.title}`}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              sx={{ bgcolor: "primary.bgLight" }}
+            >
+              <Grid container direction="row" spacing={1}>
+                <Grid container spacing={1} p={2}>
+                  <Stack direction="row" spacing={1}>
+                    <Grid container justifyContent="center" spacing={1}>
+                      {data.skills.map((skill, index) => (
+                        <Grid item key={index}>
+                          <Chip label={skill} color="primary" size="small" />
+                        </Grid>
+                      ))}
+                    </Grid>
+                  </Stack>
+                </Grid>
 
-              <Grid>
-                <Typography variant="h6" pl={2} color="primary.fontColorDark">
-                  {data.title}
-                </Typography>
+                <Grid>
+                  <Typography variant="h6" pl={2} color="primary.fontColorDark">
+                    {data.title}
+                  </Typography>
+                </Grid>
               </Grid>
-            </Grid>
-          </AccordionSummary>
+            </AccordionSummary>
+          </Link>
           <AccordionDetails>
             <Grid container alignItems="center">
               <Grid item xs={9} p={1}>
@@ -172,6 +184,7 @@ const Accordion = () => {
             </Grid>
           </AccordionDetails>
         </MuiAccordion>
+        // </Link>
       ))}
     </>
   );
