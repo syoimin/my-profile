@@ -82,8 +82,59 @@ const resumeData = [
     scale: "ゼロイチ開発",
   },
   {
-    skills: ["NodeJs", "Lambda"],
+    skills: [
+      "NodeJs",
+      "Lambda",
+      "AWS SAM",
+      "CodePipeline",
+      "Cloudformation",
+      "Swagger",
+      "Redis",
+    ],
     title: "SMS 二段階認証サービス SMS 送信 API 作成",
+    contents: `・二段階認証サービスの SMS 送信 API を実装
+    ・日本では、AWS SES や AWS SNS は、キャリアによって SMS が弾かれてしまうため、日本の SMS 送信サービスを利用。
+    ・SAM を利用して 素の nodejs と Lambda で API を作成
+    ・SAM の CI/CD 環境を CodePipeline で作成。SAM 自体のビルドとデプロイをコンテナ上で実行する Dockerfile と BuildSpec を作成
+    ・CodePipeline の環境は Cloudfromation で構成管理し作成`,
+    thoughts: `Serverless Framework は過去に利用したことがあったが今回業務ではじめて SAM を採用しました。SAM を使ったコードの開発は Serverless Framework とあまり変わらず
+    開発できました。Codepipeline 上で承認プロセスを入れた SAM のビルド/デプロイ環境の構築に苦戦しました。`,
+    date: "2020年 11月 ~ 2021年 4月",
+    member: 3,
+    assign: ["DB 設計", "開発", "CI/CD 構築", "API 設計", "API 開発", "テスト"],
+    scale: "ゼロイチ開発",
+  },
+  {
+    skills: ["NodeJs", "Lambda"],
+    title: "テスト2",
+    contents: `・各マイクロサービスを管理するプラットフォームの管理画面の API 設計・開発を担当。
+    ・認証サービスに Cognito を、認証方式に JWT を採用。
+    ・API のフレームワークは Gin フレームワークを採用し、コード設計に３層アーキテクチャ、MVC モデルを採用し、デザインパターンにサービス・レポジトリパターンと依存注入を独自実装。`,
+    thoughts: `初めて golang を業務で利用した開発でした。Gin フレームワークは、ルーティングとミドルウェアのみしか提供されていないのでその他必要なコード設計はすべて独自で設計しました。
+    過去に経験したフレームワークの知見を活かし、小・中規模で開発速度がある程度早く、スケールしてもコードが煩雑にならないようなデザインパターンを採用しました。
+    社内で初 golang の業務だったので、作成したコード設計のテンプレートを社内のナレッジとして共有しました。`,
+    date: "2020年 11月 ~ 2021年 4月",
+    member: 3,
+    assign: [],
+    scale: "ゼロイチ開発",
+  },
+  {
+    skills: ["NodeJs", "Lambda"],
+    title: "テスト3",
+    contents: `・各マイクロサービスを管理するプラットフォームの管理画面の API 設計・開発を担当。
+    ・認証サービスに Cognito を、認証方式に JWT を採用。
+    ・API のフレームワークは Gin フレームワークを採用し、コード設計に３層アーキテクチャ、MVC モデルを採用し、デザインパターンにサービス・レポジトリパターンと依存注入を独自実装。`,
+    thoughts: `初めて golang を業務で利用した開発でした。Gin フレームワークは、ルーティングとミドルウェアのみしか提供されていないのでその他必要なコード設計はすべて独自で設計しました。
+    過去に経験したフレームワークの知見を活かし、小・中規模で開発速度がある程度早く、スケールしてもコードが煩雑にならないようなデザインパターンを採用しました。
+    社内で初 golang の業務だったので、作成したコード設計のテンプレートを社内のナレッジとして共有しました。`,
+    date: "2020年 11月 ~ 2021年 4月",
+    member: 3,
+    assign: [],
+    scale: "ゼロイチ開発",
+  },
+  {
+    skills: ["NodeJs", "Lambda"],
+    title: "テスト4",
     contents: `・各マイクロサービスを管理するプラットフォームの管理画面の API 設計・開発を担当。
     ・認証サービスに Cognito を、認証方式に JWT を採用。
     ・API のフレームワークは Gin フレームワークを採用し、コード設計に３層アーキテクチャ、MVC モデルを採用し、デザインパターンにサービス・レポジトリパターンと依存注入を独自実装。`,
@@ -109,6 +160,7 @@ const Accordion = () => {
           expanded={
             decodeURI(location.hash) === `#${data.title}` ? true : false
           }
+          id={data.title}
         >
           <Link underline="none" href={`#${data.title}`}>
             <AccordionSummary
@@ -184,7 +236,6 @@ const Accordion = () => {
             </Grid>
           </AccordionDetails>
         </MuiAccordion>
-        // </Link>
       ))}
     </>
   );

@@ -24,11 +24,11 @@ const skillsData = [
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        link: "http://localhost:3001/my-profile/resume#%E3%83%86%E3%82%B9%E3%83%884",
       },
       {
         title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        link: "http://localhost:3001/my-profile/resume#%E3%83%86%E3%82%B9%E3%83%883",
       },
     ],
   },
@@ -79,8 +79,9 @@ const skillsData = [
     viewBox: "0 0 256 348",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title:
+          "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+        link: "http://localhost:3001/my-profile/resume#Go%20+%20RESTFull%20API%20%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9F%E3%82%B5%E3%83%BC%E3%83%90%E3%83%AC%E3%82%B9%E3%81%AA%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%81%AE%20API%20%E8%A8%AD%E8%A8%88%E3%83%BB%E9%96%8B%E7%99%BA",
       },
     ],
   },
@@ -171,7 +172,7 @@ const toolsData = [
 
 const Skills = () => {
   return (
-    <TemplateDefault className="skills">
+    <TemplateDefault className="skills" bgColor="primary.bgLight2">
       <Grid
         container
         direction="column"
