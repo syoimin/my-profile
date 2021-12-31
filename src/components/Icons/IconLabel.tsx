@@ -1,31 +1,35 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
-import SendIcon from "@mui/icons-material/Send";
 import Stack from "@mui/material/Stack";
+import Link from "@mui/material/Link";
 
 const icons = [
   {
-    icon: <DeleteIcon />,
+    icon: <></>,
     title: "Qiita",
+    link: "https://qiita.com/syoimin",
   },
   {
-    icon: <SendIcon />,
+    icon: <></>,
     title: "Github",
+    link: "https://github.com/syoimin",
   },
 ];
+
 const IconLabel = () => {
   return (
     <Stack direction="row" spacing={2}>
       {icons.map((data, index) => (
-        <Button
-          variant="contained"
-          size="large"
-          startIcon={data.icon}
+        <Link
+          href={data.link}
+          target="_blank"
+          rel="noopener noreferrer"
           key={index}
         >
-          {data.title}
-        </Button>
+          <Button variant="contained" size="large" startIcon={data.icon}>
+            {data.title}
+          </Button>
+        </Link>
       ))}
     </Stack>
   );

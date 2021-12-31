@@ -10,19 +10,55 @@ import HomeCard from "../components/HomeCard";
 import Container from "@mui/material/Container";
 import Avatar from "../components/Avatar";
 import IconLabel from "../components/Icons/IconLabel";
+import { Button } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
+import { Link } from "react-router-dom";
 
-interface homeProps {
-  data: {
-    description: string;
-    image: string;
-    imageText: string;
-    linkText: string;
-    title: string;
-  };
-}
+// 卒業年
+const graduateYear = 2016;
+const graduateMonth = 3;
+const nowDate = new Date();
 
-const Home = (props: homeProps) => {
-  const { data } = props;
+// 社会人歴
+const workYear = nowDate.getFullYear() - graduateYear;
+const workMonth = nowDate.getMonth() - graduateMonth;
+
+const homeData = {
+  aboutData: [
+    {
+      title: "略歴",
+      // リリース：プラットフォーム,growth,sms,チャット,クリニック,転職,フォーム自動   インフラ： FA, NC, OEM, コーポ,韓国,フォーム,growth
+      contents: `高知工科大学 情報通信専攻 卒業後 IT 業界に就職。
+
+      バックエンドエンジニアからキャリアを始め、DC to AWS 業務や新規のサーバ構築でインフラエンジニアとして AWS を3年以上経験。
+      その後、バックエンド、フロントエンド、インフラ問わず AWS エンジニアとして十数のプロジェクトに参画、AWS エンジニア歴は計 ${
+        workMonth < 0 ? workYear - 2 : workYear - 1
+      } 年。
+      現在、社会人 ${
+        workMonth < 0 ? workYear : workYear + 1
+      } 年目でインフラのリプレース & 新規リリースを7つ、Web サービスを7つリリース。
+      業務のかたわら、技術書典で本を出典したり、新人教育のカリキュラム作成と講師を務たりもする。
+
+
+      AWS ソリューションアーキテクトアソシエイト取得`,
+    },
+    {
+      title: "好きな技術",
+      contents: `すきな技術：Cloudformation, CodePipeline, Golang, Docker
+      得意分野：インフラ, バックエンド, AWS, CI/CD
+      経験した技術：Golang, Laravel, Java, Python, NodeJS, React, Vue, AWS Amplify, Cloudformation, ECS, Fargate, EC2, CodePipeline, APIGateway, Route53, ALB,
+      NLB, Cognito, (すべて、1から自力でリリースまでできるくらいの技術力)
+      伸ばしたい技術：Kubernates, EKS, AWS マイクロアーキテクチャ用サービス(Dynamo AppMesh AppSync など), 機械学習（CNN,自然言語処理）`,
+    },
+  ],
+  title: "しょいみんの プロフィール",
+  description: "",
+  image: "https://source.unsplash.com/-Xqckh_XVU4",
+  imageText: "main image description",
+  linkText: "Continue reading…",
+};
+
+const Home = () => {
   return (
     <TemplateHome>
       <Paper
@@ -33,14 +69,14 @@ const Home = (props: homeProps) => {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          backgroundImage: `url(${data.image})`,
+          backgroundImage: `url(${homeData.image})`,
         }}
       >
         {
           <img
             style={{ display: "none" }}
-            src={data.image}
-            alt={data.imageText}
+            src={homeData.image}
+            alt={homeData.imageText}
           />
         }
         <Box
@@ -53,13 +89,11 @@ const Home = (props: homeProps) => {
             backgroundColor: "rgba(0,0,0,.3)",
           }}
         />
-        <Grid container>
-          <Grid item md={8}>
+        <Grid container pl={4} pt={4}>
+          <Grid item>
             <Box
               sx={{
                 position: "relative",
-                p: { xs: 3, md: 6 },
-                pr: { md: 0 },
               }}
             >
               <Typography
@@ -68,11 +102,18 @@ const Home = (props: homeProps) => {
                 color="inherit"
                 gutterBottom
               >
-                {data.title}
+                {homeData.title}
               </Typography>
-              <Typography variant="h5" color="inherit" paragraph>
-                {data.description}
-              </Typography>
+              {homeData.aboutData.map((data, index) => (
+                <Typography
+                  variant="body2"
+                  color="inherit"
+                  paragraph
+                  key={index}
+                >
+                  {data.contents}
+                </Typography>
+              ))}
             </Box>
           </Grid>
         </Grid>
@@ -81,32 +122,21 @@ const Home = (props: homeProps) => {
           direction="column"
           justifyContent="center"
           alignItems="center"
-          spacing={8}
           pb={10}
         >
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <Avatar />
+          </Grid> */}
+          <Grid item xs={12} pb={4}>
+            <Link to="/skills">
+              <Button endIcon={<SendIcon />}>スキルスタックを見る</Button>
+            </Link>
           </Grid>
           <Grid item xs={12}>
             <IconLabel />
           </Grid>
         </Grid>
       </Paper>
-
-      <Box bgcolor="primary.bgLight3">
-        <Container maxWidth="lg">
-          <Grid container justifyContent="center">
-            <Typography
-              variant="h4"
-              mb={10}
-              pt={10}
-              color="primary.contrastText"
-            >
-              About me
-            </Typography>
-          </Grid>
-        </Container>
-      </Box>
 
       <Box bgcolor="primary.bgLight" pb={5}>
         <Container maxWidth="lg">

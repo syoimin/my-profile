@@ -182,13 +182,13 @@ const Skills = () => {
         pt={3}
       >
         <Grid item>
-          <Typography variant="h4"> {"Skills"} </Typography>
+          <Typography variant="h4"> 経験スキル（趣味も含む） </Typography>
         </Grid>
         <Grid item>
           <SkilsCard skillsData={skillsData} />
         </Grid>
         <Grid item>
-          <Typography variant="h4"> {"Tools"} </Typography>
+          <Typography variant="h4"> 業務で利用したツール </Typography>
         </Grid>
         <Grid item>
           <SkillsList toolsData={toolsData} />
