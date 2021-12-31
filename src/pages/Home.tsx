@@ -30,7 +30,6 @@ const Home = (props: homeProps) => {
           position: "relative",
           backgroundColor: "grey.800",
           color: "#fff",
-          mb: 4,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -94,25 +93,59 @@ const Home = (props: homeProps) => {
         </Grid>
       </Paper>
 
-      <Box sx={{ bgcolor: "#EDF2F6" }}>
+      <Box bgcolor="primary.bgLight3">
         <Container maxWidth="lg">
           <Grid container justifyContent="center">
-            <Typography variant="h3" mb={10} pt={10}>
-              Pick up
+            <Typography
+              variant="h4"
+              mb={10}
+              pt={10}
+              color="primary.contrastText"
+            >
+              About me
             </Typography>
+          </Grid>
+        </Container>
+      </Box>
+
+      <Box bgcolor="primary.bgLight" pb={5}>
+        <Container maxWidth="lg">
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="center"
+            direction="column"
+            pt={3}
+            pb={5}
+          >
+            <Grid item>
+              <Typography variant="h4" color="primary.contrastText2">
+                Activities
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2" color="primary.contrastText2">
+                外部活動の成果物
+              </Typography>
+            </Grid>
           </Grid>
 
           <HomeCard />
         </Container>
       </Box>
-      <Box sx={{ bgcolor: "#EDF2F6" }}>
+      <Box bgcolor="#EDF2F6">
         <Container maxWidth="lg">
           <Grid container justifyContent="center">
-            <Typography variant="h3" mb={10} pt={10}>
+            <Typography
+              variant="h4"
+              mb={10}
+              pt={10}
+              color="primary.contrastText2"
+            >
               History
             </Typography>
-            <Timeline />
           </Grid>
+          <Timeline />
         </Container>
       </Box>
     </TemplateHome>
