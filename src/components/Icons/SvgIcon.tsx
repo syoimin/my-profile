@@ -11,7 +11,6 @@ interface svgProps {
 }
 
 const SvgIcon = (props: svgProps) => {
-  console.log(props.icon);
   return (
     <MuiSvgIcon
       component={props.icon}

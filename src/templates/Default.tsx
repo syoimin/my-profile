@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import theme from "../styles/theme";
 import { ThemeProvider } from "@mui/material/styles";
 import Container from "@mui/material/Container";
+import Footer from "../components/Footer";
 
 interface DefaultTemplateProps {
   children: React.ReactNode;
@@ -20,6 +21,7 @@ const Default = (Props: DefaultTemplateProps) => {
         <Container maxWidth="lg">
           <main className={className}>{children}</main>
         </Container>
+        <Footer />
       </Box>
     </ThemeProvider>
   );
