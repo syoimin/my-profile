@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MuiAccordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -7,9 +7,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 import Chip from "@mui/material/Chip";
-import AssignIcon from "./Icons/AssignIcon";
+
 import Link from "@mui/material/Link";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const resumeData = [
   {

@@ -23,6 +23,7 @@ interface skilsObject {
   others: Array<string>;
   rating: number;
   viewBox: string;
+  description: string;
   projects: Array<{
     title: string;
     link: string;
@@ -73,8 +74,17 @@ const SkillsCard = (props: skillsProps) => {
                       {data.skil}
                     </Typography>
                   </Grid>
-                  <Grid item xs={2} pb={2}>
+                  <Grid item xs={2}>
                     <Rating name="read-only" value={data.rating} readOnly />
+                  </Grid>
+                  <Grid item xs={2}>
+                    <Typography
+                      variant="body2"
+                      color="text.contrastText"
+                      gutterBottom
+                    >
+                      {data.description}
+                    </Typography>
                   </Grid>
                 </Grid>
 

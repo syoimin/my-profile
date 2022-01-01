@@ -8,7 +8,7 @@ import Timeline from "../components/Timeline";
 import "../css/Home.css";
 import HomeCard from "../components/HomeCard";
 import Container from "@mui/material/Container";
-import Avatar from "../components/Avatar";
+// import Avatar from "../components/Avatar";
 import IconLabel from "../components/Icons/IconLabel";
 import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
@@ -47,7 +47,7 @@ const homeData = {
       contents: `すきな技術：Cloudformation, CodePipeline, Golang, Docker
       得意分野：インフラ, バックエンド, AWS, CI/CD
       経験した技術：Golang, Laravel, Java, Python, NodeJS, React, Vue, AWS Amplify, Cloudformation, ECS, Fargate, EC2, CodePipeline, APIGateway, Route53, ALB,
-      NLB, Cognito, (すべて、1から自力でリリースまでできるくらいの技術力)
+      NLB, Cognito, (すべて、1から自力でリリースできるくらいの技術力)
       伸ばしたい技術：Kubernates, EKS, AWS マイクロアーキテクチャ用サービス(Dynamo AppMesh AppSync など), 機械学習（CNN,自然言語処理）`,
     },
   ],

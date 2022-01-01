@@ -19,8 +19,9 @@ const skillsData = [
     icon: SvgReactIcon,
     skil: "React",
     others: ["React Native", "Expo"],
-    rating: 2,
+    rating: 3,
     viewBox: "0 0 256 228",
+    description: "このポートフォリは React + Typescript で実装",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
@@ -38,6 +39,7 @@ const skillsData = [
     others: ["Vue3", "Composition API", "Vue2", "Vuex", "Vue Router", "NuxtJS"],
     rating: 3,
     viewBox: "0 0 256 221",
+    description: "業務で Vue2, Vue3 両方経験。Vuex は最悪",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
@@ -49,8 +51,9 @@ const skillsData = [
     icon: SvgLaravelIcon,
     skil: "Laravel",
     others: ["Laravel 5,7,8"],
-    rating: 4,
+    rating: 5,
     viewBox: "0 0 256 264",
+    description: "殆どの管理システムを Laravel で作成。仕様は熟知。",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
@@ -64,6 +67,7 @@ const skillsData = [
     others: ["Amplify SDK", "Authenticator", "IoT Core"],
     rating: 4,
     viewBox: "0 0 256 191",
+    description: "Cognito 認証は Amplify SDK を利用。",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
@@ -77,6 +81,7 @@ const skillsData = [
     others: ["gin", "gorm"],
     rating: 4,
     viewBox: "0 0 256 348",
+    description: "利用中。go でクリーンアーキテクチャ組みたいな。",
     projects: [
       {
         title:
@@ -91,6 +96,7 @@ const skillsData = [
     others: ["Apach Click", "Java6"],
     rating: 3,
     viewBox: "0 0 256 346",
+    description: "SIer 時代に利用。ここ４年 Java は触れてません。",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
@@ -104,6 +110,7 @@ const skillsData = [
     others: ["AWS SAM"],
     rating: 4,
     viewBox: "0 0 256 312",
+    description: "インフラ環境は基本これ！！API 開発は SAMで。",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
@@ -117,6 +124,7 @@ const skillsData = [
     others: [],
     rating: 3,
     viewBox: "0 0 256 204",
+    description: "SAM を使う前はこっち。また戻ってくるかも",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
@@ -130,6 +138,7 @@ const skillsData = [
     others: [],
     rating: 3,
     viewBox: "0 0 256 315",
+    description: "EC2 立ててたときはベース環境をこれで作成",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
