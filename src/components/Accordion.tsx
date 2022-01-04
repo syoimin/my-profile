@@ -10,20 +10,23 @@ import Chip from "@mui/material/Chip";
 
 import Link from "@mui/material/Link";
 import { useLocation } from "react-router-dom";
+import "../css/Resume.css";
 
 const resumeData = [
   {
     skills: ["React", "Typescript", "AWS Amplify", "Cognito"],
     title: "マルチテナントの会員登録ページの認証システムの設計・開発",
     contents: `・ノーコードで会員登録ページを作成できるサービスのマルチテナント認証方式の設計・開発を担当。
-    ・認証サービスとして Cognito を採用し、マルチテナントに対応するためマルチユーザプール型を採用。
+    ・認証サービスとして Cognito を採用。マルチテナントに対応するためマルチユーザプール型を採用。
     ・React + Amplify を使って Amplify UI コンポーネントを使わず独自カスタマイズで認証画面を作成。
     ・Dynamo へのアクセスコントロール制御として IAM の Sub を用いた認証コントロールを設計。`,
     thoughts: `マルチテナントを Cognito で実装するパターンは複数あるが、今回はビジネス要件を確認し、クライアントのセキュリティ要件に満たすためにユーザプールを分ける形で実装しました。ユーザプールを分ける場合、各クライアントごとにユーザプールを特定する必要があるため、実装を工夫しました。`,
     date: "2021年 12月 ~ 現在",
+    link: "",
     member: 3,
     assign: ["認証設計", "フロント開発"],
     scale: "ゼロイチ開発",
+    feat: true,
   },
   {
     skills: [
@@ -42,10 +45,11 @@ const resumeData = [
     ・本番環境は完全サーバレスで AWS SAM を使って API Gateway + lambda を構築。
     ・開発環境は SAM を DooD (Dcker outside of Docker) 環境で実行するように構築`,
     thoughts: `初めて golang を業務で利用した開発でした。Gin フレームワークは、ルーティングとミドルウェアのみしか提供されていないのでその他必要なコード設計はオレオレフレームワークにならないように一般的なコード設計・デザインパターンを採用し設計しました。
-    過去に経験したフレームワークの知見を活かし、小・中規模で開発速度がある程度早く、スケールしてもコードが煩雑にならないようなデザインパターンを採用しました。
+    ${"　"}過去に経験したフレームワークの知見を活かし、小・中規模で開発速度がある程度早く、スケールしてもコードが煩雑にならないようなデザインパターンを採用しました。
     社内初の golang の業務だったので、作成したコード設計のテンプレートを社内のナレッジとして共有しました。`,
     date: "2021年 5月 ~ 2021年 11月",
-    member: 3,
+    link: "",
+    member: 4,
     assign: [
       "DB 設計",
       "API 設計",
@@ -54,6 +58,7 @@ const resumeData = [
       "コードレビュー",
     ],
     scale: "ゼロイチ開発",
+    feat: true,
   },
   {
     skills: [
@@ -66,20 +71,22 @@ const resumeData = [
       "Tailwind CSS",
       "CodePipeline",
     ],
-    title: "SMS 二段階認証 サービス 管理画面作成",
+    title: "SMS 二段階認証 サービス 管理画面開発",
     contents: `・SMS 二段階認証サービスのユーザ管理と SMS 送信 API の管理システムを設計・開発。
     ・フレームワークに Laravel、認証サービスに Cognito、本番環境は EC2 Autoscaling。
     ・デザインパターンに、サービス・レポジトリパターンを導入
     ・CI/CD を CodePipeline で構築
     ・Athena、Kinesis Data Firehose を使った CloudWatch のログ集計バッチ`,
 
-    thoughts: `開発期間が短かったので慣れているフレームワークを採用しました。Laravel のバージョンアップに伴い
-    Bootstrap を使わず Tailwind CSS で React のようなコンポーネント指向で HTML のパーツを作成しました。
-    チームメンバーにコード設計の意図の意思疎通があまりできず、最初は意図しないコンポーネントの分け方でコミットするメンバーもいましたがコードレビューすることで徐々にチームメンバーと認識が揃うようになりました。`,
+    thoughts: `開発期間が短かったので慣れているフレームワークを採用しました。
+    Laravel のバージョンアップに伴いBootstrap を使わず Tailwind CSS で React のようなコンポーネント指向で HTML のパーツを作成しました。
+    ${"　"}チームメンバーにコード設計の意図の意思疎通があまりできず、最初は意図しないコンポーネントの分け方でコミットするメンバーもいましたがコードレビューすることで徐々にチームメンバーと認識が揃うようになりました。`,
     date: "2020年 11月 ~ 2021年 4月",
+    link: "https://www.showcase-tv.com/pressrelease/202120531sms/",
     member: 3,
     assign: ["DB 設計", "開発", "CI/CD 構築", "コードレビュー"],
     scale: "ゼロイチ開発",
+    feat: true,
   },
   {
     skills: [
@@ -91,60 +98,77 @@ const resumeData = [
       "Swagger",
       "Redis",
     ],
-    title: "SMS 二段階認証サービス SMS 送信 API 作成",
-    contents: `・二段階認証サービスの SMS 送信 API を実装
+    title: "SMS 二段階認証サービス SMS 送信 API 開発",
+    contents: `・二段階認証サービスの SMS 送信 API を実装。
     ・日本では、AWS SES や AWS SNS は、キャリアによって SMS が弾かれてしまうため、日本の SMS 送信サービスを利用。
     ・SAM を利用して 素の nodejs と Lambda で API を作成
     ・SAM の CI/CD 環境を CodePipeline で作成。SAM 自体のビルドとデプロイをコンテナ上で実行する Dockerfile と BuildSpec を作成
     ・CodePipeline の環境は Cloudfromation で構成管理し作成`,
     thoughts: `Serverless Framework は過去に利用したことがあったが今回業務ではじめて SAM を採用しました。SAM を使ったコードの開発は Serverless Framework とあまり変わらず
     開発できました。Codepipeline 上で承認プロセスを入れた SAM のビルド/デプロイ環境の構築に苦戦しました。`,
-    date: "2020年 11月 ~ 2021年 4月",
-    member: 3,
+    date: "2020年 12月 ~ 2021年 4月",
+    link: "https://www.showcase-tv.com/pressrelease/202120531sms/",
+    member: 1,
     assign: ["DB 設計", "開発", "CI/CD 構築", "API 設計", "API 開発", "テスト"],
     scale: "ゼロイチ開発",
+    feat: true,
   },
   {
-    skills: ["NodeJs", "Lambda"],
-    title: "テスト2",
-    contents: `・各マイクロサービスを管理するプラットフォームの管理画面の API 設計・開発を担当。
-    ・認証サービスに Cognito を、認証方式に JWT を採用。
-    ・API のフレームワークは Gin フレームワークを採用し、コード設計に３層アーキテクチャ、MVC モデルを採用し、デザインパターンにサービス・レポジトリパターンと依存注入を独自実装。`,
-    thoughts: `初めて golang を業務で利用した開発でした。Gin フレームワークは、ルーティングとミドルウェアのみしか提供されていないのでその他必要なコード設計はすべて独自で設計しました。
-    過去に経験したフレームワークの知見を活かし、小・中規模で開発速度がある程度早く、スケールしてもコードが煩雑にならないようなデザインパターンを採用しました。
-    社内で初 golang の業務だったので、作成したコード設計のテンプレートを社内のナレッジとして共有しました。`,
-    date: "2020年 11月 ~ 2021年 4月",
-    member: 3,
-    assign: [],
+    skills: ["Amplify", "Iot Core", "NuxtJS"],
+    title: "オンライン展示会用 デジタル展示会プラットフォーム開発",
+    contents: `・Nuxt + Dynamo + Python を使ったオンライン展示会を実現する統合サービスを作成。
+    ・ユーザはこのオンラインサービス上のブースから製品紹介を閲覧可能。
+    ・興味のある製品をより詳しく知りたい場合、クライアントとユーザが直接やり取りできるオンラインチャットに接続可能。`,
+    thoughts: `副業で触ってた Vue.js の知見を活かしてオンラインチャットサービスの画面を NuxtJS で作成。
+    期間が短かったため双方向通信部分の技術は Amplify SDK の Iot Core 部分を利用しました。
+    vuex をステート管理に利用しましたが、開発終盤につれてステートを追うのが大変になってきたためステートの管理方針が重要だなと気付かされた開発でした。
+    `,
+    date: "2020年 10月 ~ 2020年 11月",
+    link: "https://www.cri-mw.co.jp/business/product/web/dxexpo/",
+    member: 4,
+    assign: ["コンポーネント設計", "フロント開発"],
     scale: "ゼロイチ開発",
+    feat: true,
   },
   {
-    skills: ["NodeJs", "Lambda"],
-    title: "テスト3",
-    contents: `・各マイクロサービスを管理するプラットフォームの管理画面の API 設計・開発を担当。
-    ・認証サービスに Cognito を、認証方式に JWT を採用。
-    ・API のフレームワークは Gin フレームワークを採用し、コード設計に３層アーキテクチャ、MVC モデルを採用し、デザインパターンにサービス・レポジトリパターンと依存注入を独自実装。`,
-    thoughts: `初めて golang を業務で利用した開発でした。Gin フレームワークは、ルーティングとミドルウェアのみしか提供されていないのでその他必要なコード設計はすべて独自で設計しました。
-    過去に経験したフレームワークの知見を活かし、小・中規模で開発速度がある程度早く、スケールしてもコードが煩雑にならないようなデザインパターンを採用しました。
-    社内で初 golang の業務だったので、作成したコード設計のテンプレートを社内のナレッジとして共有しました。`,
-    date: "2020年 11月 ~ 2021年 4月",
-    member: 3,
-    assign: [],
-    scale: "ゼロイチ開発",
+    skills: [
+      "Vanilla js",
+      "Lambda",
+      "Laravel",
+      "CodePipeline",
+      "Cloudformation",
+      "s3",
+    ],
+    title:
+      "タグ挿入でデザインを変更できるサービスの管理画面と仕組み自体のリプレイス開発",
+    contents: `・js タグを挿入するだけで、クライアントページのデザインを変更できるサービス。
+    ・挿入する js タグのグローバル汚染の修正とデータ容量の圧縮、管理画面を Laravel でリプレイス。
+    ・管理画面の EC2 デプロイパイプラインの実装
+    ・js のビルドとアーティファクトを S3 へデプロイするパイプライン実装。`,
+    thoughts: `管理画面は元のコードが古く、素のPHPで記述されていたため Laravel に移行しました。
+    タグから展開される js のグローバル変数がグローバル汚染していたため、グローバル汚染しないように１つのオブジェクトにまとめる工夫を行いました。
+
+    ${"　"}お客様のページに埋め込むので、影響範囲を最小限に抑えるために js のフレームワークは使わず Vanila js で全て記述し、容量を減らすため Webpack で圧縮しました。
+    ${"　"}特に目新しい技術は使ってないものの、お客様のページに影響を与えずデザイン変更できるように工夫したり、CI/CD を導入し、なるべく運用コストが低くなるように工夫しました。`,
+    date: "2020年 4月 ~ 2020年 9月",
+    link: "",
+    member: 2,
+    assign: ["開発", "リプレイス調査", "CI/CD構築"],
+    scale: "リプレイス",
+    feat: false,
   },
   {
-    skills: ["NodeJs", "Lambda"],
-    title: "テスト4",
-    contents: `・各マイクロサービスを管理するプラットフォームの管理画面の API 設計・開発を担当。
-    ・認証サービスに Cognito を、認証方式に JWT を採用。
-    ・API のフレームワークは Gin フレームワークを採用し、コード設計に３層アーキテクチャ、MVC モデルを採用し、デザインパターンにサービス・レポジトリパターンと依存注入を独自実装。`,
-    thoughts: `初めて golang を業務で利用した開発でした。Gin フレームワークは、ルーティングとミドルウェアのみしか提供されていないのでその他必要なコード設計はすべて独自で設計しました。
-    過去に経験したフレームワークの知見を活かし、小・中規模で開発速度がある程度早く、スケールしてもコードが煩雑にならないようなデザインパターンを採用しました。
-    社内で初 golang の業務だったので、作成したコード設計のテンプレートを社内のナレッジとして共有しました。`,
-    date: "2020年 11月 ~ 2021年 4月",
-    member: 3,
-    assign: [],
-    scale: "ゼロイチ開発",
+    skills: ["Virtual Private Gateway", "Lambda"],
+    title:
+      "クライアント DC と弊社 AWS との Site to Site VPN 接続の設計・設定サポート",
+    contents: `クライアントデータセンターと弊社 AWS とのVPCに対して サイト間 VPN 接続の設計とサポート`,
+    thoughts: `ソリューションアーキテクトの資格でしか触れてなかったので、この案件で実際に触れたのが良かった。`,
+    date: "2020年 3月 ~ 2020年 3月",
+    link: "",
+    member: 2,
+    assign: ["インフラ"],
+    scale: "サポート",
+    feat: false,
   },
 ];
 
@@ -161,6 +185,7 @@ const Accordion = () => {
             decodeURI(location.hash) === `#${data.title}` ? true : false
           }
           id={data.title}
+          className={data.feat ? "feat" : ""}
         >
           <Link underline="none" href={`#${data.title}`}>
             <AccordionSummary
@@ -185,6 +210,7 @@ const Accordion = () => {
                 <Grid>
                   <Typography variant="h6" pl={2} color="primary.fontColorDark">
                     {data.title}
+                    {data.feat}
                   </Typography>
                 </Grid>
               </Grid>
@@ -210,8 +236,21 @@ const Accordion = () => {
                 >
                   感想：
                 </Typography>
-                <Typography color="primary.fontColorDark">
+                <Typography color="primary.fontColorDark" className="thoughts">
                   {data.thoughts}
+                </Typography>
+                <Typography
+                  color="primary.fontColorDark"
+                  fontWeight="bold"
+                  pt={1}
+                >
+                  <Link
+                    href={data.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {data.link}
+                  </Link>
                 </Typography>
               </Grid>
               <Grid item xs={3} justifyContent="center" p={2}>

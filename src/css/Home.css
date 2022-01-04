@@ -2,6 +2,10 @@ p {
   white-space: pre-line;
 }
 
+p.thoughts {
+  text-indent: 1em;
+}
+
 .vertical-timeline-element-title {
   color: #000;
 }

@@ -8,6 +8,9 @@ const Resume = () => {
       <Typography variant="h4" color="primary.contrastText2" p={3}>
         経歴・履歴（最新順）
       </Typography>
+      <Typography variant="body1" color="red">
+        ↓ 赤ボーダーは技術レベルの上がった注目案件
+      </Typography>
       <Accordion />
     </TemplateDefault>
   );
