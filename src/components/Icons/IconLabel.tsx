@@ -2,6 +2,7 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const icons = [
   {
@@ -10,7 +11,7 @@ const icons = [
     link: "https://qiita.com/syoimin",
   },
   {
-    icon: <></>,
+    icon: <GitHubIcon />,
     title: "Github",
     link: "https://github.com/syoimin",
   },

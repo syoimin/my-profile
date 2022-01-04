@@ -11,7 +11,7 @@ import MuiSchoolIcon from "@mui/icons-material/School";
 // }
 
 function SchoolIcon() {
-  return <MuiSchoolIcon />;
+  return <MuiSchoolIcon fontSize="large" />;
 }
 
 export default SchoolIcon;

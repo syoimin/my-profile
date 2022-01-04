@@ -38,7 +38,7 @@ const HomeCard = () => {
   return (
     <Grid container>
       {pickUpData.map((data, index) => (
-        <Grid item xs={3} key={index}>
+        <Grid item xs={6} sm={6} md={3} key={index}>
           <Button href={data.url}>
             <Card sx={{ maxWidth: 212 }}>
               <CardMedia
