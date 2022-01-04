@@ -14,7 +14,7 @@ import "../css/Resume.css";
 
 const resumeData = [
   {
-    skills: ["React", "Typescript", "AWS Amplify", "Cognito"],
+    skills: ["React", "Typescript", "AWS Amplify", "Cognito", "ESLint"],
     title: "マルチテナントの会員登録ページの認証システムの設計・開発",
     contents: `・ノーコードで会員登録ページを作成できるサービスのマルチテナント認証方式の設計・開発を担当。
     ・認証サービスとして Cognito を採用。マルチテナントに対応するためマルチユーザプール型を採用。
@@ -206,6 +206,7 @@ const resumeData = [
       "Docker",
       "CloudFront",
       "Serverless Framework",
+      "gitlab-ci",
     ],
     title: "BtoBtoC 入力フォーム支援サービスプロジェクト",
     contents: `・S3、Lambda、CloudFront のサーバレスアーキテクチャで構築
@@ -218,6 +219,73 @@ const resumeData = [
     member: 2,
     assign: ["サーバレス設計", "CI/CD構築"],
     scale: "ゼロイチ開発",
+    feat: false,
+  },
+  {
+    skills: [
+      "Laravel",
+      "PHPStan",
+      "ReactNative",
+      "FCM（プッシュ通知）",
+      "ECS",
+      "Amazon SNS",
+      "Amplify",
+      "Expo",
+      "Cognito",
+      "Fargate",
+      "Docker",
+      "CloudFormation",
+    ],
+    title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+    contents: `・バックエンドは Fargate 上に Laravel で実装。
+    ・スマホアプリに ReactNative を採用。ReactNative の統合環境に Expo を採用。ビルド環境を整えた。
+    ・認証機能として Cognito を利用し、JWT を使った認証を実装。
+    ・開発は Docker で行い CI/CD にgithub とコードビルド、Slackを使ってチャットベースで任意ブランチを選択、CloudFormation と ECS を利用して AWS 環境のステージ環境構築を動的に作成。`,
+    thoughts: `ここで採用した技術が自分のスキルアップにかなりつながっている。特に Laravel、ECS、CloudFormation、Cognito、ReactNative の経験は現在にもつながっている。
+    このときは先輩の設計を見様見真似で勉強しながら実装していた。今では自分で実装できるまでになった。`,
+    date: "2018年 10月 ~ 2019年 3月",
+    link: "",
+    member: 4,
+    assign: ["開発", "CI/CD構築", "ローカル環境構築", "アプリ開発"],
+    scale: "ゼロイチ開発",
+    feat: true,
+  },
+  {
+    skills: ["Nginx Cache", "WordPress", "MySQL", "AmazonLinux", "php-fpm"],
+    title: "オウンドメディアサーバ構築",
+    contents: `・Xserver で運用してたオウンドメディアのWordPressサイトのトラフィックが契約的にさばけなくなったため急遽AWS併設
+    ・迅速に対応するため AMIMOTO インスタンスを利用し依頼から1週間で移行することができた。`,
+    thoughts: `インフラやってるとたまにワードプレス構築してってくるよね。`,
+    date: "2019年 4月 ~ 2020年 7月",
+    link: "",
+    member: 1,
+    assign: ["サーバレス構築", "CI/CD構築"],
+    scale: "サーバ移設",
+    feat: false,
+  },
+  {
+    skills: [
+      "GAS",
+      "シェルスクリプト",
+      "Python",
+      "Grafana",
+      "InfluxDB",
+      "Jira",
+      "Grafana",
+    ],
+    title: "業務改善ツール作成 いろいろ",
+    contents: `・IDC のトラフィックをCSVにエクスポート、それを Phthonで InfluxDBのデータ構造に整形、Grafana でダッシュボード作成
+    ・AWSの請求権限もらえなかったので毎月送信される AWS の請求メールを GAS で検索＆収集、シートに書き込むスクリプト作成
+    ・AWSアカウントごとのインスタンス情報を GAS + AWS SDK で取得し、一覧で見れるような Sheet を作成
+    ・Lambda + CloudWatchEvents で インスタンスを定時後に自動停止させるツールの作成
+    ・Laravel の Migration ファイルを SpredSheet のテーブル定義書から自動生成するツールを作成
+    ・Gas から Jira のチケット作成ツール`,
+    thoughts: `案件と案件の間に業務で困ってることを解決するのが楽しい`,
+    date: "不定期",
+    link: "",
+    member: 1,
+    assign: ["開発"],
+    scale: "業務ハック",
     feat: false,
   },
 ];
@@ -260,7 +328,6 @@ const Accordion = () => {
                 <Grid>
                   <Typography variant="h6" pl={2} color="primary.fontColorDark">
                     {data.title}
-                    {data.feat}
                   </Typography>
                 </Grid>
               </Grid>

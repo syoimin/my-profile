@@ -13,6 +13,7 @@ import IconLabel from "../components/Icons/IconLabel";
 import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { Link } from "react-router-dom";
+import MuiLink from "@mui/material/Link";
 
 // 卒業年
 const graduateYear = 2016;
@@ -114,6 +115,15 @@ const Home = () => {
                   {data.contents}
                 </Typography>
               ))}
+              <Typography variant="body2" color="inherit" pt={3}>
+                エニアグラム
+              </Typography>
+              <MuiLink href="https://hoyme.jp/enia5">
+                <Button>研究者</Button>
+              </MuiLink>
+              <MuiLink href="https://hoyme.jp/enia6">
+                <Button>堅実化</Button>
+              </MuiLink>
             </Box>
           </Grid>
         </Grid>
