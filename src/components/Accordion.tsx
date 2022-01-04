@@ -159,6 +159,21 @@ const resumeData = [
   },
   {
     skills: ["Virtual Private Gateway", "Lambda"],
+    title: "新人研修 カリキュラム作成と講師",
+    contents: `・新人研修の講師役を担当し、今年入社する 3名の研修を行う。
+    ・座学では Web 開発の基礎から開発方法論、デザインパターンやオブジェクト指向についての講義を行う。
+    ・実践研修では、Laravel を使った EC サイトの構築を指導し実践開発を行ってもらった。`,
+    thoughts: `コロナの時期で、対面ではなくオンラインで研修することになったが、リモートを活かしてビデオ通話で個々人にサポートすることができた。
+    実践研修中は全員通話状態にし、常に講師の自分に質問ができるような状態にしたおかげで新人のスキルアップの速度が早かった。`,
+    date: "2020年 3月 ~ 2020年 4月",
+    link: "",
+    member: 1,
+    assign: ["講師", "資料作成"],
+    scale: "講師",
+    feat: false,
+  },
+  {
+    skills: ["Virtual Private Gateway", "Lambda"],
     title:
       "クライアント DC と弊社 AWS との Site to Site VPN 接続の設計・設定サポート",
     contents: `クライアントデータセンターと弊社 AWS とのVPCに対して サイト間 VPN 接続の設計とサポート`,
@@ -168,6 +183,41 @@ const resumeData = [
     member: 2,
     assign: ["インフラ"],
     scale: "サポート",
+    feat: false,
+  },
+  {
+    skills: ["Nginx PHP7 CloudFormation", "Ansible", "IaC"],
+    title: "オンプレサーバを AWS へ移設",
+    contents: `・オンプレサーバを EC2 へ移設
+    ・構成の提案、設計、構築、設定、バックアッ プの導入、監視の導入、移設作業。
+    ・IaCを導入し、サーバ構成管理には Ansible、EC２、ALB、RDSなどは CloudFormation で管理。`,
+    thoughts: `予算の関係でコードの改修はせずレガシーな 構成のままAWSに移設するためオートスケールなしの固定台数の EC2 を数台負荷分散させた。`,
+    date: "2019年 8月 ~ 2020年 3月",
+    link: "",
+    member: 2,
+    assign: ["インフラ設計", "インフラ構築"],
+    scale: "サーバ移設",
+    feat: false,
+  },
+  {
+    skills: [
+      "Lambda",
+      "Webpack",
+      "Docker",
+      "CloudFront",
+      "Serverless Framework",
+    ],
+    title: "BtoBtoC 入力フォーム支援サービスプロジェクト",
+    contents: `・S3、Lambda、CloudFront のサーバレスアーキテクチャで構築
+    ・開発からテスト、リリースに CI/CD を導入しており、GitLab の マージリクエストから gitlab-ci で静的解析、ビルド、最終的に S3 へデプロイ後 CloudFront のキャッシュを削除する lambda を実行など一連のリリース作業の自動化を実現した。
+    ・ローカル開発環境として Docker を 利用した javascript の開発環境を開発者にレクチャーした。`,
+    thoughts: `マイクロサービスの一つだったので、なるべくサーバレスで運用コストを少なくできたプロジェクトだった。
+    js + lambda を使ったサーバレスアプリケーションの CI/CD を一通り自身で実装できたのがいい経験になった。`,
+    date: "2019年 4月 ~ 2020年 7月",
+    link: "",
+    member: 2,
+    assign: ["サーバレス設計", "CI/CD構築"],
+    scale: "ゼロイチ開発",
     feat: false,
   },
 ];
