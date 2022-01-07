@@ -29,8 +29,21 @@ const skillsData = [
     description: "殆どの管理システムを Laravel で作成。仕様は熟知。",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "SMS 二段階認証 サービス 管理画面開発",
+        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証 サービス 管理画面開発",
+      },
+      {
+        title:
+          "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "http://localhost:3001/my-profile/resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+      },
+      {
+        title: "新人研修 カリキュラム作成と講師",
+        link: "http://localhost:3001/my-profile/resume#新人研修 カリキュラム作成と講師",
+      },
+      {
+        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "http://localhost:3001/my-profile/resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
     ],
   },
@@ -45,7 +58,28 @@ const skillsData = [
       {
         title:
           "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
-        link: "http://localhost:3001/my-profile/resume#Go%20+%20RESTFull%20API%20%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9F%E3%82%B5%E3%83%BC%E3%83%90%E3%83%AC%E3%82%B9%E3%81%AA%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%81%AE%20API%20%E8%A8%AD%E8%A8%88%E3%83%BB%E9%96%8B%E7%99%BA",
+        link: "http://localhost:3001/my-profile/resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+      },
+      {
+        title: "SMS 二段階認証 サービス 管理画面開発",
+        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証 サービス 管理画面開発",
+      },
+      {
+        title: "SMS 二段階認証サービス SMS 送信 API 開発",
+        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証サービス SMS 送信 API 開発",
+      },
+      {
+        title:
+          "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "http://localhost:3001/my-profile/resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+      },
+      {
+        title: "BtoBtoC 入力フォーム支援サービス開発プロジェクト",
+        link: "http://localhost:3001/my-profile/resume#BtoBtoC 入力フォーム支援サービス開発プロジェクト",
+      },
+      {
+        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "http://localhost:3001/my-profile/resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
     ],
   },
@@ -60,7 +94,7 @@ const skillsData = [
       {
         title:
           "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
-        link: "http://localhost:3001/my-profile/resume#Go%20+%20RESTFull%20API%20%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9F%E3%82%B5%E3%83%BC%E3%83%90%E3%83%AC%E3%82%B9%E3%81%AA%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%81%AE%20API%20%E8%A8%AD%E8%A8%88%E3%83%BB%E9%96%8B%E7%99%BA",
+        link: "http://localhost:3001/my-profile/resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
       },
     ],
   },
@@ -73,8 +107,26 @@ const skillsData = [
     description: "インフラ環境は基本これ！！API 開発は SAMで。",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title:
+          "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "http://localhost:3001/my-profile/resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+      },
+      {
+        title: "SMS 二段階認証サービス SMS 送信 API 開発",
+        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証サービス SMS 送信 API 開発",
+      },
+      {
+        title: "オンプレサーバを AWS へ移設",
+        link: "http://localhost:3001/my-profile/resume#オンプレサーバを AWS へ移設",
+      },
+      {
+        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "http://localhost:3001/my-profile/resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+      },
+      {
+        title:
+          "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+        link: "http://localhost:3001/my-profile/resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
       },
     ],
   },
@@ -208,8 +260,8 @@ const skillsData = [
     description: "競技プログラミングで利用。ポインタはこれでマスター！！",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "ACM ICPC 国際大学対抗プログラミングコンテスト 過去問",
+        link: "https://icpc.iisf.or.jp/past/",
       },
     ],
   },
@@ -222,8 +274,8 @@ const skillsData = [
     description: "公式チュートリアルを一通り実施。今後伸ばしたい！！",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "Kubernetesの基本を学ぶ",
+        link: "https://kubernetes.io/ja/docs/tutorials/kubernetes-basics/",
       },
     ],
   },

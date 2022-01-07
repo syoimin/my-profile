@@ -38,10 +38,10 @@ const SkillsCard = (props: skillsProps) => {
     <Grid
       container
       spacing={{ xs: 2, md: 3 }}
-      columns={{ xs: 4, sm: 8, md: 12 }}
+      columns={{ xs: 4, sm: 8, md: 8, lg: 12 }}
     >
       {skillsData.map((data, index) => (
-        <Grid item xs={2} sm={4} md={4} key={index}>
+        <Grid item xs={4} sm={4} md={4} key={index}>
           <Card
             className="card"
             sx={{
@@ -109,8 +109,11 @@ const SkillsCard = (props: skillsProps) => {
                         href={project.link}
                         key={index}
                         color="primary.link"
+                        underline="hover"
                       >
-                        <Typography variant="body1">{project.title}</Typography>
+                        <Typography variant="body1" pt={1}>
+                          ・{project.title}
+                        </Typography>
                       </Link>
                     ))}
                   </Grid>

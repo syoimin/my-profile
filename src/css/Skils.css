@@ -14,6 +14,14 @@
   left: 0;
 }
 
+.card-reverse p {
+  display: block;
+  width: 40ch;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 /* 表面の表示 */
 .card-surface {
   opacity: 1;

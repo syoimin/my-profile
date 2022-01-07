@@ -100,6 +100,7 @@ const resumeData = [
       "Cloudformation",
       "Swagger",
       "Redis",
+      "Docker",
     ],
     title: "SMS 二段階認証サービス SMS 送信 API 開発",
     contents: `・二段階認証サービスの SMS 送信 API を実装。
@@ -143,9 +144,9 @@ const resumeData = [
       "CodePipeline",
       "Cloudformation",
       "s3",
+      "Docker",
     ],
-    title:
-      "タグ挿入でデザインを変更できるサービスの管理画面と仕組み自体のリプレイス開発",
+    title: "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
     contents: `・js タグを挿入するだけで、クライアントページのデザインを変更できるサービス。
     ・挿入する js タグのグローバル汚染の修正とデータ容量の圧縮、管理画面を Laravel でリプレイス。
     ・管理画面の EC2 デプロイパイプラインの実装
