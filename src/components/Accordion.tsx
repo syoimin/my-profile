@@ -27,6 +27,7 @@ const resumeData = [
     assign: ["認証設計", "フロント開発"],
     scale: "ゼロイチ開発",
     feat: true,
+    jobs: ["フロントエンド"],
   },
   {
     skills: [
@@ -59,6 +60,7 @@ const resumeData = [
     ],
     scale: "ゼロイチ開発",
     feat: true,
+    jobs: ["API 開発", "インフラ"],
   },
   {
     skills: [
@@ -87,6 +89,7 @@ const resumeData = [
     assign: ["DB 設計", "開発", "CI/CD 構築", "コードレビュー"],
     scale: "ゼロイチ開発",
     feat: true,
+    jobs: ["バックエンド", "インフラ"],
   },
   {
     skills: [
@@ -104,14 +107,15 @@ const resumeData = [
     ・SAM を利用して 素の nodejs と Lambda で API を作成
     ・SAM の CI/CD 環境を CodePipeline で作成。SAM 自体のビルドとデプロイをコンテナ上で実行する Dockerfile と BuildSpec を作成
     ・CodePipeline の環境は Cloudfromation で構成管理し作成`,
-    thoughts: `Serverless Framework は過去に利用したことがあったが今回業務ではじめて SAM を採用しました。SAM を使ったコードの開発は Serverless Framework とあまり変わらず
-    開発できました。Codepipeline 上で承認プロセスを入れた SAM のビルド/デプロイ環境の構築に苦戦しました。`,
+    thoughts: `Serverless Framework は過去に利用していたが今回業務ではじめて SAM を採用しました。
+    SAM を使ったコードの開発は Serverless Framework とあまり変わらず開発できました。Codepipeline 上で承認プロセスを入れた SAM のビルド/デプロイ環境の構築に苦戦しました。`,
     date: "2020年 12月 ~ 2021年 4月",
     link: "https://www.showcase-tv.com/pressrelease/202120531sms/",
     member: 1,
     assign: ["DB 設計", "開発", "CI/CD 構築", "API 設計", "API 開発", "テスト"],
     scale: "ゼロイチ開発",
     feat: true,
+    jobs: ["API 開発", "インフラ"],
   },
   {
     skills: ["Amplify", "Iot Core", "NuxtJS"],
@@ -129,6 +133,7 @@ const resumeData = [
     assign: ["コンポーネント設計", "フロント開発"],
     scale: "ゼロイチ開発",
     feat: true,
+    jobs: ["フロントエンド"],
   },
   {
     skills: [
@@ -156,9 +161,10 @@ const resumeData = [
     assign: ["開発", "リプレイス調査", "CI/CD構築"],
     scale: "リプレイス",
     feat: false,
+    jobs: ["インフラ", "バックエンド", "フロントエンド"],
   },
   {
-    skills: ["Virtual Private Gateway", "Lambda"],
+    skills: ["Laravel", "研修 講師"],
     title: "新人研修 カリキュラム作成と講師",
     contents: `・新人研修の講師役を担当し、今年入社する 3名の研修を行う。
     ・座学では Web 開発の基礎から開発方法論、デザインパターンやオブジェクト指向についての講義を行う。
@@ -170,7 +176,8 @@ const resumeData = [
     member: 1,
     assign: ["講師", "資料作成"],
     scale: "講師",
-    feat: false,
+    feat: true,
+    jobs: ["新人教育"],
   },
   {
     skills: ["Virtual Private Gateway", "Lambda"],
@@ -184,9 +191,10 @@ const resumeData = [
     assign: ["インフラ"],
     scale: "サポート",
     feat: false,
+    jobs: ["インフラ"],
   },
   {
-    skills: ["Nginx PHP7 CloudFormation", "Ansible", "IaC"],
+    skills: ["Nginx", "PHP7", "CloudFormation", "Ansible", "IaC"],
     title: "オンプレサーバを AWS へ移設",
     contents: `・オンプレサーバを EC2 へ移設
     ・構成の提案、設計、構築、設定、バックアッ プの導入、監視の導入、移設作業。
@@ -198,6 +206,7 @@ const resumeData = [
     assign: ["インフラ設計", "インフラ構築"],
     scale: "サーバ移設",
     feat: false,
+    jobs: ["インフラ"],
   },
   {
     skills: [
@@ -208,7 +217,7 @@ const resumeData = [
       "Serverless Framework",
       "gitlab-ci",
     ],
-    title: "BtoBtoC 入力フォーム支援サービスプロジェクト",
+    title: "BtoBtoC 入力フォーム支援サービス開発プロジェクト",
     contents: `・S3、Lambda、CloudFront のサーバレスアーキテクチャで構築
     ・開発からテスト、リリースに CI/CD を導入しており、GitLab の マージリクエストから gitlab-ci で静的解析、ビルド、最終的に S3 へデプロイ後 CloudFront のキャッシュを削除する lambda を実行など一連のリリース作業の自動化を実現した。
     ・ローカル開発環境として Docker を 利用した javascript の開発環境を開発者にレクチャーした。`,
@@ -220,6 +229,7 @@ const resumeData = [
     assign: ["サーバレス設計", "CI/CD構築"],
     scale: "ゼロイチ開発",
     feat: false,
+    jobs: ["バックエンド", "フロントエンド", "インフラ"],
   },
   {
     skills: [
@@ -249,6 +259,7 @@ const resumeData = [
     assign: ["開発", "CI/CD構築", "ローカル環境構築", "アプリ開発"],
     scale: "ゼロイチ開発",
     feat: true,
+    jobs: ["フロントエンド（アプリ開発）", "バックエンド", "インフラ"],
   },
   {
     skills: ["Nginx Cache", "WordPress", "MySQL", "AmazonLinux", "php-fpm"],
@@ -262,6 +273,7 @@ const resumeData = [
     assign: ["サーバレス構築", "CI/CD構築"],
     scale: "サーバ移設",
     feat: false,
+    jobs: ["インフラ"],
   },
   {
     skills: [
@@ -287,52 +299,215 @@ const resumeData = [
     assign: ["開発"],
     scale: "業務ハック",
     feat: false,
+    jobs: ["開発"],
+  },
+  {
+    skills: ["Prometheus", "Grafana", "Ansible", "systemd", "Amazon Linux2"],
+    title: "Prometheus を使ったリソース監視サーバの構築",
+    contents: `・fluentd のキューやスループットを計測したかったので prometheus を導入し、ダッシュボードを作成。
+    ・ついでに Nginx、ディスク、CPU、メモリ、トラフィックなどのダッシュボードも作成。
+    ・prometheus の監視エージェントが systemd のサービス形式で常駐させなければならないので、serviceを作成する ansible を作成。
+    ・prometheus と Grafana サーバの構築、インストール、設定自体も Ansible 化`,
+    thoughts: `ちょうど Ansible にハマっていた頃で、何でもかんでも Ansible で作成してました。
+    ただこの後 Prometheus を使うことはなかったので、この Ansible は活かされることはなかったです(´・ω・｀)`,
+    date: "2018年 9月",
+    link: "",
+    member: 1,
+    assign: ["構築"],
+    scale: "イチゼロ開発",
+    feat: false,
+    jobs: ["インフラ"],
+  },
+  {
+    skills: ["ALB", "CLB", "Ubuntu", "Redis", "RDS", "Redis", "WebSocket"],
+    title: "ブラウザ画面共有サービスのインフラ冗長化",
+    contents: `・サービスの安定稼働のためにインフラ環境を冗長化
+    ・最終的に事業ごと売りに出すことになったので途中でプロジェクト終了し、リリースはできなかった。`,
+    thoughts: `最終的にサービスを終了することになったので本番リリースはできませんでしたが、WebSocketを利用したサーバ冗長化構成について開発、ステージ環境まで構築・検証しました。`,
+    date: "2018年 7月 ~ 2018年 12月",
+    link: "",
+    member: 2,
+    assign: ["構築"],
+    scale: "リプレイス",
+    feat: false,
+    jobs: ["インフラ"],
+  },
+  {
+    skills: ["Apache", "WordPress", "MySQL", "CloudFront", "S3"],
+    title: "コーポレートサイトAWS移設",
+    contents: `・IDCで運用していたコーポレートサイトをWordPressインスタンスに移行。
+    ・WordPress のコード自体にかなり手を加えられていたのでドキュメントルート及びDBをそのままAWSに移設する形で実施。
+    ・移設する上で少しでもAWSのトラフィックを減らすためにメディアファイルのみS3+CloudFrontから配信するように改善
+    ・DB の中身を書き換える必要があったので一括置換用のスクリプトと SQL の作成`,
+    thoughts: `インフラやってると Wordpress 構築頼まれるよね。`,
+    date: "2018年 5月 ~ 2018年 10月",
+    link: "",
+    member: 3,
+    assign: ["構築"],
+    scale: "サーバ移設",
+    feat: false,
+    jobs: ["インフラ"],
+  },
+  {
+    skills: [
+      "GitLabRunner",
+      "EC2",
+      "GitLab CI",
+      "GitLab Runner",
+      "fluentd",
+      "Ansible",
+    ],
+    title: "画面操作ログ取得サービスのサーバ構築",
+    contents: `・クライアントの操作ログを取得するサービスをAWSで設計・構築
+    ・操作ログをEC2からfluentd、S3へ格納、EC2はオートスケーリングを設定
+    ・CI/CD環境として GitLabCI と GitLab Runnerを使って S3へプッシュ、EC2のスケールイン時にユーザデータを利用してS3からデプロイさせるように設定`,
+    thoughts: `インフラ部分のアーキテクト提案、設計、構築をすべて1から一人で担当したはじめての案件になります。
+    この頃は CI/CD に興味を持ち始めたので、試しに簡単な CI を GitLab Runner を使って実装しました。この経験が今につながってます。
+    `,
+    date: "2018年 3月 ~ 2018年 4月",
+    link: "",
+    member: 2,
+    assign: ["サーバ構築", "アーキテクト設計", "CI/CD構築"],
+    scale: "サーバ移設",
+    feat: true,
+    jobs: ["インフラ"],
+  },
+  {
+    skills: [
+      "AWS",
+      "NLB",
+      "NGW",
+      "VPC",
+      "S3",
+      "RDS",
+      "Route53",
+      "Ansible",
+      "Rundeck",
+      "CentOS6",
+      "Direct Connect",
+    ],
+    title: "オンプレサーバを AWS へ移設 2件",
+    contents: `・サーバの構築・設定
+    ・Ansible を利用した、インフラ設定のコード化と自動構築`,
+    thoughts: `初の DC to AWS で 一件目は手動で構築したが、2件目は前回の移設作業のノウハウを活かしてサーバ構築の自動化を導入し、Ansible で、インフラ設定のコード化と自動構築を行なった。
+    実は、DNS の切り替えに失敗しており、DNS 伝搬の遅延を考慮せずにオンプレ DNS から Route53 へ移行してしまい、約 1 日 サービス停止させてしまった(´・ω・｀)
+    `,
+    date: "2017年 6月 ~ 2018年 2月",
+    link: "",
+    member: 2,
+    assign: ["サーバ構築", "インフラ自動化"],
+    scale: "サーバ移設",
+    feat: true,
+    jobs: ["インフラ"],
+  },
+  {
+    skills: ["Java", "OracleDB", "PL/SQL"],
+    title: "転職サイトの管理システム",
+    contents: `・新規画面の画面設計、テーブル設計・開発、単体テスト、結合テストの作成・実施`,
+    thoughts: `新規追加画面に伴う画面の設計、テーブル設計、開発、テストを行いました。テーブルのリレーションが複雑なため、何度も上司とテーブル結合を確認してもらいました。
+    テーブルによってシステムの処理が重くならない工夫がされており、大変勉強になった開発でした。`,
+    date: "2017年 2月 ~ 2018年 5月",
+    link: "",
+    member: 2,
+    assign: ["開発", "要件定義", "単体テスト", "結合テスト"],
+    scale: "追加機能開発",
+    feat: false,
+    jobs: ["開発"],
+  },
+  {
+    skills: ["javascript", "Bootstrap", "d3.js", "jQuery"],
+    title: "データ可視化システム",
+    contents: `・グラフィカルなダッシュボード開発`,
+    thoughts: `APIで返されたJSONデータからグラフを作成するシステムを開発しました。
+    お客様との要件のすり合わせを行うため頻繁に途中成果物の確認を行うことで満足してもらえるシステムを提案できました。
+    今まで、Java を使った硬い案件であったので初めてモダンなライブラリを使った開発だったので自分の中で、開発の楽しさの趣向が変わった案件であった。`,
+    date: "2016年 11月 ~ 2017年 1月",
+    link: "",
+    member: 2,
+    assign: ["開発", "要件定義", "単体テスト", "結合テスト"],
+    scale: "ゼロイチ開発",
+    feat: true,
+    jobs: ["開発"],
   },
 ];
 
 const Accordion = () => {
   const location = useLocation(); // アンカーから直リンクされた時にアコーディオンを開くために利用
+  const [expanded, setExpanded] = React.useState<string | false>(false);
+
+  const handleChange =
+    (panel: string, title: string) =>
+    (event: React.SyntheticEvent, isExpanded: boolean) => {
+      // ロケーションハッシュを変更（title ハッシュを URL に付与すると アコーディオン開閉時の位置がずれるため暫定で指定なしにしている）
+      window.location.hash = "";
+
+      // アコーディオン詳細の表示・非表示
+      setExpanded(isExpanded ? panel : false);
+    };
 
   return (
     <>
       {resumeData.map((data, index) => (
         <MuiAccordion
-          TransitionProps={{ unmountOnExit: false }}
+          TransitionProps={{ unmountOnExit: true }}
           key={index}
           expanded={
-            decodeURI(location.hash) === `#${data.title}` ? true : false
+            decodeURI(location.hash) === `#${data.title}` ||
+            expanded === `panel ${index}`
           }
           id={data.title}
           className={data.feat ? "feat" : ""}
+          onChange={handleChange(`panel ${index}`, data.title)}
         >
-          <Link underline="none" href={`#${data.title}`}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-              sx={{ bgcolor: "primary.bgLight" }}
-            >
-              <Grid container direction="row" spacing={1}>
-                <Grid container spacing={1} p={2}>
-                  <Stack direction="row" spacing={1}>
-                    <Grid container justifyContent="center" spacing={1}>
-                      {data.skills.map((skill, index) => (
-                        <Grid item key={index}>
-                          <Chip label={skill} color="primary" size="small" />
-                        </Grid>
-                      ))}
-                    </Grid>
-                  </Stack>
+          {/* <Link underline="none" href={`#${data.title}`}> */}
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+            sx={{ bgcolor: "primary.bgLight" }}
+          >
+            <Grid container direction="row" spacing={1}>
+              <Grid container justifyContent="space-between">
+                <Grid item>
+                  {data.jobs.map((job, index) => (
+                    <Typography
+                      variant="body2"
+                      color="primary.fontColorDark"
+                      key={index}
+                      component="span"
+                      pr={3}
+                      pl={1}
+                    >
+                      {job}
+                    </Typography>
+                  ))}
                 </Grid>
-
-                <Grid>
-                  <Typography variant="h6" pl={2} color="primary.fontColorDark">
-                    {data.title}
+                <Grid item>
+                  <Typography variant="body2" color="primary.fontColorDark">
+                    {data.date}
                   </Typography>
                 </Grid>
               </Grid>
-            </AccordionSummary>
-          </Link>
+              <Grid container spacing={1} p={2}>
+                <Stack direction="row" spacing={1}>
+                  <Grid container justifyContent="center" spacing={1}>
+                    {data.skills.map((skill, index) => (
+                      <Grid item key={index}>
+                        <Chip label={skill} color="primary" size="small" />
+                      </Grid>
+                    ))}
+                  </Grid>
+                </Stack>
+              </Grid>
+
+              <Grid container justifyContent="left">
+                <Typography variant="h6" pl={2} color="primary.fontColorDark">
+                  {data.title}
+                </Typography>
+              </Grid>
+            </Grid>
+          </AccordionSummary>
+          {/* </Link> */}
           <AccordionDetails>
             <Grid container alignItems="center">
               <Grid item xs={9} p={1}>

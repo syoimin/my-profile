@@ -19,10 +19,10 @@ const Default = (Props: DefaultTemplateProps) => {
     <ThemeProvider theme={theme}>
       <Box sx={{ bgcolor: bgColor }}>
         <Header />
-        <Container maxWidth="lg">
+        <Container maxWidth="xl">
           <main className={className}>{children}</main>
         </Container>
-        <Box pt={3} pl={5} pr={5}>
+        <Box pt={3}>
           <Divider />
           <Footer />
         </Box>
