@@ -103,7 +103,7 @@ const SkillsCard = (props: skillsProps) => {
                       {data.skil}
                     </Typography>
                   </Grid>
-                  <Grid item xs={2}>
+                  <Grid item xs={2} width="100%">
                     {data.projects.map((project, index) => (
                       <Link
                         href={project.link}

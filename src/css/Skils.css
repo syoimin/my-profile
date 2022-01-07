@@ -16,7 +16,6 @@
 
 .card-reverse p {
   display: block;
-  width: 40ch;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -29,6 +28,7 @@
   transition: opacity 100ms 150ms, transform 300ms 150ms;
 }
 .card-reverse {
+  width: -webkit-fill-available;
   opacity: 0;
   transform: rotateY(90deg);
   transition: opacity 50ms 200ms, transform 300ms;
