@@ -1,8 +1,6 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import ReactIcon from "./Icons/SvgIcon";
@@ -48,7 +46,7 @@ const SkillsCard = (props: skillsProps) => {
             className="card"
             sx={{
               minWidth: 275,
-              bgcolor: "primary.light",
+              bgcolor: "primary.bgDark2",
               color: "primary.contrastText",
             }}
           >
