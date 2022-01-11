@@ -14,7 +14,7 @@ import "../css/Resume.css";
 
 const resumeData = [
   {
-    skills: ["React", "Typescript", "AWS Amplify", "Cognito", "ESLint"],
+    skills: ["React", "Typescript", "AWS Amplify", "Cognito"],
     title: "マルチテナントの会員登録ページの認証システムの設計・開発",
     contents: `・ノーコードで会員登録ページを作成できるサービスのマルチテナント認証方式の設計・開発を担当。
     ・認証サービスとして Cognito を採用。マルチテナントに対応するためマルチユーザプール型を採用。
@@ -186,7 +186,7 @@ const resumeData = [
       "クライアント DC と弊社 AWS との Site to Site VPN 接続の設計・設定サポート",
     contents: `クライアントデータセンターと弊社 AWS とのVPCに対して サイト間 VPN 接続の設計とサポート`,
     thoughts: `ソリューションアーキテクトの資格でしか触れてなかったので、この案件で実際に触れたのが良かった。`,
-    date: "2020年 3月 ~ 2020年 3月",
+    date: "2020年 2月 ~ 2020年 2月",
     link: "",
     member: 2,
     assign: ["インフラ"],
@@ -195,11 +195,42 @@ const resumeData = [
     jobs: ["インフラ"],
   },
   {
+    skills: [
+      "AmazonLinux2",
+      "CloudFormation",
+      "GitLab Runner",
+      "CloudWatch",
+      "Amazon SES",
+      "AWS ALB",
+      "AWS Autoscaling",
+    ],
+    title: "韓国語講座予約・決済システムのインフラ構築",
+    contents: `
+    ・韓国語講座予約システムのインフラ環境の構築
+    ・CloudFormatioin を利用した IaaC の導入
+    ・GitLab Runner を利用した CI と ビルド環境構築
+    ・Laravel Docker 開発環境の設定
+    ・集計用月次バッチの作成
+    ・Amazon SES の設定
+    ・監視用ダッシュボードの作成
+    `,
+    thoughts: `受託案件でインフラを管理できるメンバーが限られていたため、運用コストを下げるために CI/CD を導入。
+    運用時の作業を開発者に行ってもらうことを見据えて、監視ツールの設定や CI の設定、デプロイの半自動化の設定を行い、使い方を開発者にレクチャーしました。
+    `,
+    date: "2020年 1月 ~ 2020年 2月",
+    link: "",
+    member: 2,
+    assign: ["インフラ設計", "インフラ構築"],
+    scale: "ゼロイチ構築",
+    feat: false,
+    jobs: ["インフラ"],
+  },
+  {
     skills: ["Nginx", "PHP7", "CloudFormation", "Ansible", "IaC"],
     title: "オンプレサーバを AWS へ移設",
     contents: `・オンプレサーバを EC2 へ移設
     ・構成の提案、設計、構築、設定、バックアッ プの導入、監視の導入、移設作業。
-    ・IaCを導入し、サーバ構成管理には Ansible、EC２、ALB、RDSなどは CloudFormation で管理。`,
+    ・IaaCを導入し、サーバ構成管理には Ansible、EC２、ALB、RDSなどは CloudFormation で管理。`,
     thoughts: `予算の関係でコードの改修はせずレガシーな 構成のままAWSに移設するためオートスケールなしの固定台数の EC2 を数台負荷分散させた。`,
     date: "2019年 8月 ~ 2020年 3月",
     link: "",
@@ -250,8 +281,10 @@ const resumeData = [
     title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
     contents: `・バックエンドは Fargate 上に Laravel で実装。
     ・スマホアプリに ReactNative を採用。ReactNative の統合環境に Expo を採用。ビルド環境を整えた。
+    ・後に Expo だと push 通知が送れないため Eject。FireBase を使った push 通知環境を構築。
     ・認証機能として Cognito を利用し、JWT を使った認証を実装。
-    ・開発は Docker で行い CI/CD にgithub とコードビルド、Slackを使ってチャットベースで任意ブランチを選択、CloudFormation と ECS を利用して AWS 環境のステージ環境構築を動的に作成。`,
+    ・開発は Docker で行い CI/CD にgithub とコードビルド、Slackを使ってチャットベースで任意ブランチを選択、CloudFormation と ECS を利用して AWS 環境のステージ環境構築を動的に作成。
+    ・コンテナの強みを活かして、スラックから動的にテスト環境を構築。チャット駆動型開発を構築`,
     thoughts: `ここで採用した技術が自分のスキルアップにかなりつながっている。特に Laravel、ECS、CloudFormation、Cognito、ReactNative の経験は現在にもつながっている。
     このときは先輩の設計を見様見真似で勉強しながら実装していた。今では自分で実装できるまでになった。`,
     date: "2018年 10月 ~ 2019年 3月",

@@ -18,6 +18,7 @@ import { ReactComponent as CodepipelineIcon } from "../icons/aws-codepipeline.sv
 import { ReactComponent as PythonIcon } from "../icons/python.svg";
 import { ReactComponent as KubernatesIcon } from "../icons/kubernetes.svg";
 import { ReactComponent as CIcon } from "../icons/c.svg";
+import { ReactComponent as JavascriptIcon } from "../icons/javascript.svg";
 
 const skillsData = [
   {
@@ -53,7 +54,7 @@ const skillsData = [
     others: ["docker-compose", "Dockerfile"],
     rating: 5,
     viewBox: "0 0 256 185",
-    description: "基本すべて Docker で開発中。Dockerfile もかけるよ。",
+    description: "基本すべて Docker で開発中。Dockerfile も書く。",
     projects: [
       {
         title:
@@ -151,6 +152,28 @@ const skillsData = [
     rating: 4,
     viewBox: "0 0 256 191",
     description: "Cognito 認証は Amplify SDK を利用。",
+    projects: [
+      {
+        title: "○○案件の管理画面作成プロジェクト",
+        link: "https://google.com",
+      },
+    ],
+  },
+  {
+    icon: JavascriptIcon,
+    skil: "javascript",
+    others: [
+      "ES2020",
+      "Typescript",
+      "ESLInt",
+      "Webpack",
+      "prettier",
+      "npm",
+      "vanilla js",
+    ],
+    rating: 4,
+    viewBox: "0 0 256 256",
+    description: "嫌でもスキルつくよね。js 使う前にはコード設計大事!!",
     projects: [
       {
         title: "○○案件の管理画面作成プロジェクト",
