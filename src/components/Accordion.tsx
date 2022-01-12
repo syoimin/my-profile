@@ -119,7 +119,7 @@ const resumeData = [
     jobs: ["API 開発", "インフラ"],
   },
   {
-    skills: ["Amplify", "Iot Core", "NuxtJS"],
+    skills: ["AWS Amplify", "Iot Core", "NuxtJS", "Vue.js"],
     title: "オンライン展示会用 デジタル展示会プラットフォーム開発",
     contents: `・Nuxt + Dynamo + Python を使ったオンライン展示会を実現する統合サービスを作成。
     ・ユーザはこのオンラインサービス上のブースから製品紹介を閲覧可能。
@@ -271,11 +271,12 @@ const resumeData = [
       "FCM（プッシュ通知）",
       "ECS",
       "Amazon SNS",
-      "Amplify",
+      "AWS Amplify",
       "Expo",
       "Cognito",
       "Fargate",
       "Docker",
+      "CodePipeline",
       "CloudFormation",
     ],
     title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
@@ -424,7 +425,7 @@ const resumeData = [
     contents: `・サーバの構築・設定
     ・Ansible を利用した、インフラ設定のコード化と自動構築`,
     thoughts: `初の DC to AWS で 一件目は手動で構築したが、2件目は前回の移設作業のノウハウを活かしてサーバ構築の自動化を導入し、Ansible で、インフラ設定のコード化と自動構築を行なった。
-    実は、DNS の切り替えに失敗しており、DNS 伝搬の遅延を考慮せずにオンプレ DNS から Route53 へ移行してしまい、約 1 日 サービス停止させてしまった(´・ω・｀)
+    実は、ネームサーバの伝搬の遅延を考慮せずにオンプレから Route53 へ一気に移行してしまい、約 1 日 サービス停止させてしまった(´・ω・｀)
     `,
     date: "2017年 6月 ~ 2018年 2月",
     link: "",

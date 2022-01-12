@@ -31,20 +31,20 @@ const skillsData = [
     projects: [
       {
         title: "SMS 二段階認証 サービス 管理画面開発",
-        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証 サービス 管理画面開発",
+        link: "./resume#SMS 二段階認証 サービス 管理画面開発",
       },
       {
         title:
           "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
-        link: "http://localhost:3001/my-profile/resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "./resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
       },
       {
         title: "新人研修 カリキュラム作成と講師",
-        link: "http://localhost:3001/my-profile/resume#新人研修 カリキュラム作成と講師",
+        link: "./resume#新人研修 カリキュラム作成と講師",
       },
       {
         title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
-        link: "http://localhost:3001/my-profile/resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "./resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
     ],
   },
@@ -59,28 +59,28 @@ const skillsData = [
       {
         title:
           "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
-        link: "http://localhost:3001/my-profile/resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+        link: "./resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
       },
       {
         title: "SMS 二段階認証 サービス 管理画面開発",
-        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証 サービス 管理画面開発",
+        link: "./resume#SMS 二段階認証 サービス 管理画面開発",
       },
       {
         title: "SMS 二段階認証サービス SMS 送信 API 開発",
-        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証サービス SMS 送信 API 開発",
+        link: "./resume#SMS 二段階認証サービス SMS 送信 API 開発",
       },
       {
         title:
           "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
-        link: "http://localhost:3001/my-profile/resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "./resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
       },
       {
         title: "BtoBtoC 入力フォーム支援サービス開発プロジェクト",
-        link: "http://localhost:3001/my-profile/resume#BtoBtoC 入力フォーム支援サービス開発プロジェクト",
+        link: "./resume#BtoBtoC 入力フォーム支援サービス開発プロジェクト",
       },
       {
         title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
-        link: "http://localhost:3001/my-profile/resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "./resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
     ],
   },
@@ -95,7 +95,7 @@ const skillsData = [
       {
         title:
           "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
-        link: "http://localhost:3001/my-profile/resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+        link: "./resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
       },
     ],
   },
@@ -110,24 +110,24 @@ const skillsData = [
       {
         title:
           "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
-        link: "http://localhost:3001/my-profile/resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "./resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
       },
       {
         title: "SMS 二段階認証サービス SMS 送信 API 開発",
-        link: "http://localhost:3001/my-profile/resume#SMS 二段階認証サービス SMS 送信 API 開発",
+        link: "./resume#SMS 二段階認証サービス SMS 送信 API 開発",
       },
       {
         title: "オンプレサーバを AWS へ移設",
-        link: "http://localhost:3001/my-profile/resume#オンプレサーバを AWS へ移設",
+        link: "./resume#オンプレサーバを AWS へ移設",
       },
       {
         title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
-        link: "http://localhost:3001/my-profile/resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "./resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
       {
         title:
           "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
-        link: "http://localhost:3001/my-profile/resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+        link: "./resume#Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
       },
     ],
   },
@@ -140,8 +140,21 @@ const skillsData = [
     description: "いつもお世話になっております。CI/CD といえばこれ！！",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "SMS 二段階認証 サービス 管理画面開発",
+        link: "./resume#SMS 二段階認証 サービス 管理画面開発",
+      },
+      {
+        title: "SMS 二段階認証サービス SMS 送信 API 開発",
+        link: "./resume#SMS 二段階認証サービス SMS 送信 API 開発",
+      },
+      {
+        title:
+          "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "./resume#タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+      },
+      {
+        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "./resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
     ],
   },
@@ -154,8 +167,16 @@ const skillsData = [
     description: "Cognito 認証は Amplify SDK を利用。",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "マルチテナントの会員登録ページの認証システムの設計・開発",
+        link: "./resume#マルチテナントの会員登録ページの認証システムの設計・開発",
+      },
+      {
+        title: "オンライン展示会用 デジタル展示会プラットフォーム開発",
+        link: "./resume#オンライン展示会用 デジタル展示会プラットフォーム開発",
+      },
+      {
+        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "./resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
     ],
   },
@@ -176,8 +197,8 @@ const skillsData = [
     description: "嫌でもスキルつくよね。js 使う前にはコード設計大事!!",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "殆どの案件で js が使われているので省略",
+        link: "",
       },
     ],
   },
@@ -190,26 +211,34 @@ const skillsData = [
     description: "このポートフォリは React + Typescript で実装",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "http://localhost:3001/my-profile/resume#%E3%83%86%E3%82%B9%E3%83%884",
+        title: "マルチテナントの会員登録ページの認証システムの設計・開発",
+        link: "./resume#マルチテナントの会員登録ページの認証システムの設計・開発",
       },
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "http://localhost:3001/my-profile/resume#%E3%83%86%E3%82%B9%E3%83%883",
+        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "./resume#クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+      },
+      {
+        title: "このサイト",
+        link: "",
       },
     ],
   },
   {
     icon: SvgVueIcon,
-    skil: "Vue",
+    skil: "Vue.js",
     others: ["Vue3", "Composition API", "Vue2", "Vuex", "NuxtJS"],
     rating: 3,
     viewBox: "0 0 256 221",
     description: "業務で Vue2, Vue3 両方経験。Vuex は最悪",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "オンライン展示会用 デジタル展示会プラットフォーム開発",
+        link: "./resume#オンライン展示会用 デジタル展示会プラットフォーム開発",
+      },
+      {
+        title: "副業：クローリング結果の管理画面作成",
+        link: "",
       },
     ],
   },
@@ -222,8 +251,8 @@ const skillsData = [
     description: "SIer 時代に利用。ここ４年 Java は触れてません。",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "転職サイトの管理システム",
+        link: "./resume#転職サイトの管理システム",
       },
     ],
   },
@@ -237,8 +266,8 @@ const skillsData = [
     description: "SAM を使う前はこっち。また戻ってくるかも",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "BtoBtoC 入力フォーム支援サービス開発プロジェクト",
+        link: "./resume#BtoBtoC 入力フォーム支援サービス開発プロジェクト",
       },
     ],
   },
@@ -251,8 +280,20 @@ const skillsData = [
     description: "EC2 立ててたときはベース環境をこれで作成",
     projects: [
       {
-        title: "○○案件の管理画面作成プロジェクト",
-        link: "https://google.com",
+        title: "オンプレサーバを AWS へ移設 2件",
+        link: "./resume#オンプレサーバを AWS へ移設 2件",
+      },
+      {
+        title: "オンプレサーバを AWS へ移設",
+        link: "./resume#オンプレサーバを AWS へ移設",
+      },
+      {
+        title: "Prometheus を使ったリソース監視サーバの構築",
+        link: "./resume#Prometheus を使ったリソース監視サーバの構築",
+      },
+      {
+        title: "画面操作ログ取得サービスのサーバ構築",
+        link: "./resume#画面操作ログ取得サービスのサーバ構築",
       },
     ],
   },
