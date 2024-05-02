@@ -11,6 +11,9 @@ import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 
+const BASE_URL = process.env.REACT_APP_BASE_URL;
+console.log(BASE_URL);
+
 interface skilsObject {
   icon: React.FunctionComponent<
     React.SVGProps<SVGSVGElement> & {
@@ -106,7 +109,7 @@ const SkillsCard = (props: skillsProps) => {
                   <Grid item xs={2} width="100%">
                     {data.projects.map((project, index) => (
                       <Link
-                        href={project.link}
+                        href={`${BASE_URL}/my-profile/resume#${project.link}`}
                         key={index}
                         color="primary.link"
                         underline="hover"
