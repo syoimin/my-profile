@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.aaa2f40c.css",
-    "main.js": "/my-profile/static/js/main.7c576ac1.js",
-    "static/js/787.3ee23931.chunk.js": "/my-profile/static/js/787.3ee23931.chunk.js",
+    "main.css": "/my-profile/static/css/main.459c7094.css",
+    "main.js": "/my-profile/static/js/main.953079f7.js",
+    "static/js/453.d2d88465.chunk.js": "/my-profile/static/js/453.d2d88465.chunk.js",
     "static/media/gopher.svg": "/my-profile/static/media/gopher.a133b78b252b8cfb35adc983d3dbae60.svg",
     "static/media/kubernetes.svg": "/my-profile/static/media/kubernetes.9c2b252df012670856cc2db6e7364d84.svg",
     "static/media/react.svg": "/my-profile/static/media/react.e27571eaed899c642345e71163624ef9.svg",
@@ -11,6 +11,7 @@
     "static/media/java.svg": "/my-profile/static/media/java.83165dfb2f5a7657ce4c73e0ba3cef32.svg",
     "static/media/python.svg": "/my-profile/static/media/python.6a8b2999db46fb931134216e8fdfdb2c.svg",
     "static/media/docker.svg": "/my-profile/static/media/docker.d33285e5e47ca12603a0228b49aff3c2.svg",
+    "static/media/javascript.svg": "/my-profile/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
     "static/media/aws-cloudformation.svg": "/my-profile/static/media/aws-cloudformation.4c9729aa02f181abac5efaca993ce97e.svg",
     "static/media/aws-codepipeline.svg": "/my-profile/static/media/aws-codepipeline.b7177275c79c81036d5c6ffb62188dc3.svg",
     "static/media/aws-amplify.svg": "/my-profile/static/media/aws-amplify.39678aa05a4ce5e61a975f6ceaeefa38.svg",
@@ -18,12 +19,12 @@
     "index.html": "/my-profile/index.html",
     "static/media/c.svg": "/my-profile/static/media/c.ac1d78d764a07eb04050b182e4166929.svg",
     "static/media/vue.svg": "/my-profile/static/media/vue.c286d2da48ffbf281f407b0c4c94271f.svg",
-    "main.aaa2f40c.css.map": "/my-profile/static/css/main.aaa2f40c.css.map",
-    "main.7c576ac1.js.map": "/my-profile/static/js/main.7c576ac1.js.map",
-    "787.3ee23931.chunk.js.map": "/my-profile/static/js/787.3ee23931.chunk.js.map"
+    "main.459c7094.css.map": "/my-profile/static/css/main.459c7094.css.map",
+    "main.953079f7.js.map": "/my-profile/static/js/main.953079f7.js.map",
+    "453.d2d88465.chunk.js.map": "/my-profile/static/js/453.d2d88465.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaa2f40c.css",
-    "static/js/main.7c576ac1.js"
+    "static/css/main.459c7094.css",
+    "static/js/main.953079f7.js"
   ]
 }
