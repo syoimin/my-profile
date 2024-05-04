@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import React from "react";
 import TemplateHome from "../templates/Home";
 import Paper from "@mui/material/Paper";
@@ -32,24 +33,35 @@ const homeData = {
       contents: `高知工科大学 情報通信専攻 卒業後 IT 業界に就職。
 
       バックエンドエンジニアからキャリアを始め、DC to AWS 業務や新規のサーバ構築でインフラエンジニアとして AWS を3年以上経験。
-      その後、バックエンド、フロントエンド、インフラ問わず AWS エンジニアとして十数のプロジェクトに参画、AWS エンジニア歴は計 ${
-        workMonth < 0 ? workYear - 2 : workYear - 1
-      } 年。
+      その後、バックエンド、フロントエンド、インフラ問わず AWS エンジニアとして十数のプロジェクトに参画。
       現在、社会人 ${
         workMonth < 0 ? workYear : workYear + 1
-      } 年目でインフラのリプレース & 新規リリースを7つ、Web サービスを7つリリース。
+      } 年目。インフラのリプレース & 新規サービスのリリースを7つ行っている。
       業務のかたわら、技術書典で本を出典したり、新人教育のカリキュラム作成と講師を務たりもする。
+      ここ３年はスクラム形式で開発しており月２，３回のリリースを行っている。
 
 
       AWS ソリューションアーキテクトアソシエイト取得`,
     },
     {
       title: "好きな技術",
-      contents: `すきな技術：Cloudformation, CodePipeline, Golang, Docker
-      得意分野：インフラ, バックエンド, AWS, CI/CD
-      経験した技術：Golang, Laravel, Java, Python, NodeJS, React, Vue, AWS Amplify, Cloudformation, ECS, Fargate, EC2, CodePipeline, APIGateway, Route53, ALB,
-      NLB, Cognito, (すべて、1から自力でリリースできるくらいの技術力)
-      伸ばしたい技術：Kubernates, EKS, AWS マイクロアーキテクチャ用サービス(Dynamo AppMesh AppSync など), 機械学習（CNN,自然言語処理）`,
+      contents: `
+      すきな技術：Cloudformation, CodePipeline, Golang, Docker
+      得意分野：インフラ, バックエンド, AWS, IaC, CI/CD
+      経験した言語：Golang, PHP, NodeJS, TypeScript, Python, Java
+      経験したフレームワーク：gin, クリーンアーキテクチャ, Laravel, Express, React, Next, Django, Nuxt, Vue
+      経験したクラウド（AWS）： すべて、1から自力でリリース作成 & CloudFormation 管理経験あり
+      　- インフラ：　　　Cloudformation, Route53, DirectConnect, VPN, ALB, NLB, EC2, VPC, CloudWatch Insight, CloudFront, ACM, KMS, SecretsManager, SystemsManager, IAM
+      　- コンテナ：　　　ECS, Fargate, ECR
+      　- サーバレス：　　AWS Amplify, AWS SAM, APIGateway, Lambda, StepFunctions, EventBridge, SQS, SNS
+      　- データベース：　RDS, DynamoDB, Redis
+      　- 認証：　　　　　Cognito, カスタムトリガー
+      　- CI/CD：　　　　 CodePipeline, CodeBuild, CodeDeploy
+      　- ストレージ：　　S3
+      経験したクラウド（GCP）：Cloud Function, Firebase, GAE, Cloud SQL
+      OS：AlpineLinux, AlmaLinux, CentOS, REHL, Ubuntu, MacOS
+      その他：GraphQL（Hasura）, Docker, GitHubActions, Ansible, Nginx, Apache, MySQL, php-fpm, PostgreSQL, Kibana, Fluentd, Prometheus, Grafana
+      伸ばしたい技術・領域：Kubernates, スクラムマスター, 教育`,
     },
   ],
   title: "しょいみんの プロフィール",
