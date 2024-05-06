@@ -22,29 +22,26 @@ import { ReactComponent as JavascriptIcon } from "../icons/javascript.svg";
 
 const skillsData = [
   {
-    icon: SvgLaravelIcon,
-    skil: "Laravel",
-    others: ["Laravel 5,7,8"],
-    rating: 5,
-    viewBox: "0 0 256 264",
-    description: "2020年ごろまでは Laravel をメインで利用。仕様は熟知。",
+    icon: SvgGoIcon,
+    skil: "Go",
+    others: ["gin", "gorm", "クリーンアーキテクチャ"],
+    rating: 4,
+    viewBox: "0 0 256 348",
+    description:
+      "ここ３年 Go 言語で開発中。コード設計から、フレームワークの載せ替えまで行う",
     projects: [
       {
-        title: "SMS 二段階認証 サービス 管理画面開発",
-        link: "SMS 二段階認証 サービス 管理画面開発",
-      },
-      {
         title:
-          "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
-        link: "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+          "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+        link: "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
       },
       {
-        title: "新人研修 カリキュラム作成と講師",
-        link: "新人研修 カリキュラム作成と講師",
+        title: "プロジェクト導入時の Go コード設計",
+        link: "#",
       },
       {
-        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
-        link: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        title: "gin フレームワークのクリーンアーキテクチャ化",
+        link: "#",
       },
     ],
   },
@@ -85,17 +82,29 @@ const skillsData = [
     ],
   },
   {
-    icon: SvgGoIcon,
-    skil: "Go",
-    others: ["gin", "gorm"],
-    rating: 4,
-    viewBox: "0 0 256 348",
-    description: "利用中。go でクリーンアーキテクチャ組みたいな。",
+    icon: SvgLaravelIcon,
+    skil: "Laravel",
+    others: ["Laravel 5,7,8"],
+    rating: 5,
+    viewBox: "0 0 256 264",
+    description: "2020年ごろまでは Laravel をメインで利用。仕様は熟知。",
     projects: [
       {
+        title: "SMS 二段階認証 サービス 管理画面開発",
+        link: "SMS 二段階認証 サービス 管理画面開発",
+      },
+      {
         title:
-          "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
-        link: "Go + RESTFull API を利用したサーバレスな管理画面の API 設計・開発",
+          "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+        link: "タグ挿入でデザインを変更できるサービスの管理画面 リプレイス開発",
+      },
+      {
+        title: "新人研修 カリキュラム作成と講師",
+        link: "新人研修 カリキュラム作成と講師",
+      },
+      {
+        title: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
+        link: "クリニックのアプリ予約情報管理システムと予約情報閲覧アプリ",
       },
     ],
   },
