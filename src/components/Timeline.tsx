@@ -156,17 +156,18 @@ const historyData = [
       background: oddColor.background,
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
-    date: "2021 年現在",
+    date: "2024 年現在",
     iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <BusinessIcon />,
     title: "クラウドネイティブな Web エンジニアへ成長",
     subTitle: "",
-    contents: `2018年に開発エンジニアとして従事したいことを報告。
+    contents: `
         ReactNative を利用した予約サービスのモバイルアプリ、
         Laravel や Go、Nodejs などを使った開発などを通して、
         徐々に Web エンジニア としてのキャリアを積む。
         今ではAWS を利用したクラウドネイティブなアーキテクトの設計からバックエンドの開発
-        環境構築、フロントエンドの開発など、開発フローのほとんどの領域を一人で行うまでに成長`,
+        環境構築、フロントエンドの開発など、開発フローのほとんどの領域を一人で行うまでに成長
+        ここ３年はスクラム開発で開発を行い、今までのすべての領域の知識を活かしてリリースに貢献している`,
   },
 
   {
@@ -175,13 +176,13 @@ const historyData = [
       background: oddColor.background,
     },
     contentArrowStyle: { borderRight: `7px solid  ${oddColor.background}` },
-    date: "近い将来 & 10、20年後の未来",
+    date: "10、20年後の未来",
     iconStyle: { background: "#b33e5c", color: "#fff" },
     icon: <AirplaneIcon />,
     title: "新たな道とさらなる高みへ",
     subTitle: "大変革時代を生き残るためにするべきこと",
     contents: `将来の目標：
-        大学時代に学んでいた機械学習の学び直しを行う
+        小さくても泥臭くてもいいので自分で考えたサービスを世の中に公開したい
         キャリアの軸をクラウドネイティブなバックエンドエンジニアもしくはソリューションアーキテクト
         双方向な能動的プログラミングスクールを開きたい
         個人でプログラミングの楽しさと魅力を教えられる人になる`,
